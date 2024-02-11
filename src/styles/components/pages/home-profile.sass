@@ -1,0 +1,142 @@
+@use '../../variables'
+@use '../../mixins'
+
+.container-apresentation
+    @include mixins.flex-center
+    min-height: 100vh
+    max-width: 1300px
+    margin: 0 auto
+
+    .container-grid
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+        .apresentation-text
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 2rem
+            text-align: left
+            padding: 3.5rem
+
+            > h1
+                font-size: 8rem
+                line-height: 10rem
+            > p
+                padding: 0 .5rem
+                line-height: 2.75rem
+            .svgs
+                width: 100%
+                @include mixins.flex-center
+                justify-content: start
+                padding: .5rem
+                gap: 0 1.5rem
+
+                a
+                    width: fit-content
+
+                    svg
+                        font-size: 4.75rem
+                        color: variables.$white
+                        padding: .5rem
+                        border-radius: 1.5rem
+                        box-shadow: variables.$shadow
+                        transition: all ease-in-out .125s
+
+                    #github
+                        background: #111
+
+                    #in
+                        background: #0A66C2
+
+                    #wpp
+                        background: #25D366
+
+                    svg:hover
+                        transform: scale(1.05)
+
+                .svg-email
+                    position: relative
+                    width: 21.3rem
+                    display: grid
+                    grid-template-columns: 25% 75% 0
+                    border-radius: .5rem
+                    box-shadow: variables.$shadow
+
+                    button
+                        border-radius: .5rem 0 0 .5rem
+                        box-shadow: none
+                        background: variables.$gradient
+                        transition: all ease-in-out .2s
+                        svg
+                            font-size: 2.5rem
+
+                    button:hover
+                        transform: scale(1.07)
+
+                    button:active
+                        top: 0
+
+                    input
+                        pointer-events: none
+                        color: variables.$p-color
+                        padding: .5rem
+                        font-size: 1.3rem
+                        border: 1px solid variables.$carmesim-red
+                        border-radius: 0 .5rem .5rem 0
+                        background-color: variables.$white
+
+                    .copied
+                        display: none
+                        position: absolute
+                        width: 75%
+                        height: 100%
+                        left: 25%
+                        background: variables.$inverse-gradient
+                        border-radius: 0 .5rem .5rem 0
+                        animation: slideIn .3s ease-in-out
+
+                        @keyframes slideIn
+                            from
+                                left: 10%
+                            to
+                                left: 25%
+                        p
+                            @include mixins.flex-center
+                            padding-top: 1.25rem
+                            color: variables.$white
+
+        .apresentation-art
+            @include mixins.flex-center
+            margin: 0 auto
+            width: 100%
+            padding: 3.5rem
+            filter: drop-shadow(variables.$bottom-shadow)
+
+            > img
+                position: relative
+                width: 90%
+                border-radius: 50%
+
+            .square-1
+                z-index: -1
+                position: absolute
+                top: 7rem
+                left: 7rem
+                width: 30rem
+                height: 30rem
+                border-radius: 4rem
+                background: variables.$h-color
+                box-shadow: variables.$shadow
+
+            .square-2
+                z-index: -1
+                position: absolute
+                bottom: 7rem
+                right: 7rem
+                width: 30rem
+                height: 30rem
+                border-radius: 4rem
+                background: variables.$h-color
+                box-shadow: variables.$shadow

@@ -1,0 +1,63 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    list-style-type: none
+    font-family: 'Protest Strike', sans-serif
+
+html
+    font-size: 62.5%
+
+body
+    background-color: variables.$light
+    @include mixins.flex-center
+    overflow-x: hidden
+
+main
+    width: 100vw
+    @include mixins.flex-column
+    gap: 3.33rem
+
+h1
+    font-size: 5rem
+    color: variables.$h-color
+
+.alvinegro
+    @include mixins.alvinegro-text
+
+.gradient
+    @include mixins.gradient-text
+
+h2
+    font-size: 4rem
+    color: variables.$h-color
+
+h3
+    font-size: 3rem
+    color: variables.$h-color
+
+h4
+    font-size: 2.5rem
+    color: variables.$h-color
+
+p
+    font-size: 2rem
+    color: variables.$p-color
+
+span
+    font-size: 1.5rem
+    color: variables.$p-color
+
+button
+    @include mixins.btn
+
+button:active
+    position: relative
+    top: 1px
+
+strong
+    @include mixins.gradient-text

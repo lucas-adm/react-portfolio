@@ -1,0 +1,45 @@
+@use 'variables'
+
+@mixin flex-center
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 0 .5rem
+
+@mixin flex-column
+    display: flex
+    flex-direction: column
+    gap: .5rem 0
+
+@mixin btn
+    cursor: pointer
+    font-size: 1.75rem
+    padding: 1rem
+    color: variables.$white
+    background: variables.$gradient
+    border: 0
+    border-radius: .5rem
+    box-shadow: variables.$bottom-shadow
+    transition: .3s
+
+@mixin gradient-border
+    content: ''
+    background: variables.$gradient
+    height: 3px
+    width: 30%
+
+@mixin alvinegro-text
+    background-image: linear-gradient(to right, variables.$white 50%, variables.$black 50%)
+    background-clip: text
+    -webkit-background-clip: text
+    color: transparent
+    -webkit-text-fill-color: transparent
+    -webkit-text-stroke: .1px
+    -webkit-text-stroke-color: variables.$black
+
+@mixin gradient-text
+    background-image: variables.$gradient
+    background-clip: text
+    -webkit-background-clip: text
+    color: transparent
+    -webkit-text-fill-color: transparent

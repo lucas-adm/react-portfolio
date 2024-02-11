@@ -1,0 +1,25 @@
+@use '../variables'
+
+.icon-block
+    position: relative
+    width: fit-content
+
+    img
+        filter: drop-shadow(variables.$bottom-shadow)
+
+    span
+        display: none
+        width: 140%
+        align-items: center
+        justify-content: center
+        position: absolute
+        top: -3rem
+        left: 0
+        background: variables.$gradient
+        color: variables.$light
+        padding: .5rem .75rem
+        border-radius: .25rem
+
+div:hover
+    > span
+        display: flex

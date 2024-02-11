@@ -1,0 +1,61 @@
+@use '../../variables'
+@use '../../mixins'
+@use '../icons'
+
+.section-skills
+    @include mixins.flex-column
+    max-width: 1300px
+    margin: 0 auto
+
+    .container-title
+        padding: 0 3.5rem
+
+    .container-skills
+        display: grid
+        grid-template-columns: 1fr 1fr
+        padding: 3.5rem
+
+        .container-areas
+            width: 100%
+            @include mixins.flex-column
+            justify-content: center
+            gap: 3rem 0
+
+            .container-area
+                width: 100%
+                @include mixins.flex-column
+                gap: 2rem 0
+
+                h3
+                    width: fit-content
+                    background-color: #dbd7d2
+                    border-radius: .75rem
+                    padding: .75rem
+
+                .container-languages
+                    width: 100%
+                    display: grid
+                    grid-template-columns: 1fr 1fr
+                    justify-content: space-between
+
+                    .strong-languages, .weak-languages
+                        @include mixins.flex-column
+
+                        .languages
+                            @include mixins.flex-center
+                            justify-content: start
+                            flex-wrap: wrap
+                            gap: 0 1rem
+
+        .container-invite
+            @include mixins.flex-column
+            justify-content: center
+            align-items: center
+            text-align: center
+            gap: 2.5rem 0
+            padding: 3.5rem
+            border-radius: .75rem
+            background-color: #f4c4b8
+
+            button:hover
+                filter: opacity(.85)

@@ -1,6 +1,6 @@
 import '../styles/components/icons.sass'
 
-const icons = ({ src, name, w, h }) => {
+const Icons = ({ src, name, w, h }) => {
 
     const data_icon = {
         MySQL: 'https://i.imgur.com/denuprB.png',
@@ -30,4 +30,4 @@ const icons = ({ src, name, w, h }) => {
     )
 }
 
-export default icons
+export default Icons

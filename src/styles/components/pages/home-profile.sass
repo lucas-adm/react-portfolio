@@ -109,7 +109,6 @@
 
         .apresentation-art
             @include mixins.flex-center
-            margin: 0 auto
             width: 100%
             padding: 3.5rem
             filter: drop-shadow(variables.$bottom-shadow)
@@ -124,8 +123,8 @@
                 position: absolute
                 top: 7rem
                 left: 7rem
-                width: 30rem
-                height: 30rem
+                width: 27.77rem
+                height: 27.77rem
                 border-radius: 4rem
                 background: variables.$h-color
                 box-shadow: variables.$shadow
@@ -135,8 +134,50 @@
                 position: absolute
                 bottom: 7rem
                 right: 7rem
-                width: 30rem
-                height: 30rem
+                width: 27.77rem
+                height: 27.77rem
                 border-radius: 4rem
                 background: variables.$h-color
                 box-shadow: variables.$shadow
+
+    @media screen and ( max-width: 1158px  )
+        width: 70%
+
+        .container-grid
+            grid-template-columns: 1fr
+            margin-top: 7.77rem
+
+    @media screen and ( max-width: 520px )
+        width: 100%
+
+        .container-grid
+            overflow-x: hidden
+            margin-left: -3.75rem
+
+            .apresentation-text
+                text-align: left
+                gap: 1rem 0
+
+                h1
+                    font-size: 15vw
+                    line-height: 20vw
+                    padding: 0 1.5rem
+
+                p
+                    width: 100vw
+                    padding: .75rem 1.5rem
+                    font-size: 5vw
+                    line-height: 6.25vw
+
+                .svgs
+                    justify-content: center
+                    flex-wrap: wrap
+                    gap: 1.75rem
+
+            .apresentation-art
+                order: -1
+                margin-bottom: -6rem
+
+                .square-1, .square-2
+                    width: 22rem
+                    height: 22rem

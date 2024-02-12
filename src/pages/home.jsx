@@ -1,13 +1,13 @@
-import HomeProfile from '../components/home-profile'
-import HomeSkills from '../components/home-skills'
+import HomeProfile from '../components/HomeProfile'
+import HomeSkills from '../components/HomeSkills'
 
-const home = () => {
+const Home = () => {
   return (
     <main>
       <HomeProfile />
-      <HomeSkills />
+      {/* <HomeSkills /> */}
     </main>
   )
 }
 
-export default home
+export default Home

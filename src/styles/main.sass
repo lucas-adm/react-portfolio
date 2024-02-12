@@ -12,52 +12,50 @@
 html
     font-size: 62.5%
 
-body
-    background-color: variables.$light
-    @include mixins.flex-center
-    overflow-x: hidden
+    body
+        background-color: variables.$light
 
-main
-    width: 100vw
-    @include mixins.flex-column
-    gap: 3.33rem
+        section
+            max-width: 100vw
+            @include mixins.flex-column
+            gap: 3.33rem
 
-h1
-    font-size: 5rem
-    color: variables.$h-color
+        h1
+            font-size: 5rem
+            color: variables.$h-color
 
-.alvinegro
-    @include mixins.alvinegro-text
+        .alvinegro
+            @include mixins.alvinegro-text
 
-.gradient
-    @include mixins.gradient-text
+        .gradient
+            @include mixins.gradient-text
 
-h2
-    font-size: 4rem
-    color: variables.$h-color
+        h2
+            font-size: 4rem
+            color: variables.$h-color
 
-h3
-    font-size: 3rem
-    color: variables.$h-color
+        h3
+            font-size: 3rem
+            color: variables.$h-color
 
-h4
-    font-size: 2.5rem
-    color: variables.$h-color
+        h4
+            font-size: 2.5rem
+            color: variables.$h-color
 
-p
-    font-size: 2rem
-    color: variables.$p-color
+        p
+            font-size: 2rem
+            color: variables.$p-color
 
-span
-    font-size: 1.5rem
-    color: variables.$p-color
+        span
+            font-size: 1.5rem
+            color: variables.$p-color
 
-button
-    @include mixins.btn
+        button
+            @include mixins.btn
 
-button:active
-    position: relative
-    top: 1px
+        button:active
+            position: relative
+            top: 1px
 
-strong
-    @include mixins.gradient-text
+        strong
+            @include mixins.gradient-text

@@ -23,11 +23,22 @@ header
                 @include mixins.flex-center
                 width: fit-content
 
-        svg
-            display: none
+        .icons
+            cursor: pointer
             width: fit-content
-            font-size: 2.5rem
-            padding: 0 2rem
+
+            svg
+                width: fit-content
+                font-size: 2.5rem
+                padding: 0 2rem
+
+            .bars
+                display: none
+
+            .close
+                display: none
+                font-size: 3.25rem
+                color: red
 
         ul
             @include mixins.flex-center
@@ -58,33 +69,47 @@ header
 
     @media screen and (max-width:610px)
 
-        padding-bottom: 0
+        padding: .5rem
+        box-shadow: variables.$bottom-shadow
 
         nav
             position: relative
             display: block
-            box-shadow: variables.$bottom-shadow
-
-            *
-                transition: ease-in-out .25s
 
             .name
                 .alvinegro
                     display: none
 
-            svg
-                display: block
-                position: absolute
-                top: 0
-                right: 0
-                margin: 2rem 2rem 0 0
+            .name.open
+                display: none
+
+            .icons
+
+                svg
+                    position: absolute
+                    top: 0
+                    right: 0
+                    margin: 2rem 2rem 0 0
+
+                .bars
+                    display: block
+
+                .bars.open
+                    display: none
+
+                .close.open
+                    display: block
+                    top: -5px
+                    right: -25px
 
             ul
-                @include mixins.flex-column
-                align-items: flex-end
-                gap: 1rem 0
-                padding: 1.5rem 2rem
-                background-color: variables.$light
+                display: none
+
+            ul.open
+                @include mixins.flex-center
+                gap: 2rem
+                padding: 2rem
+                margin-left: -6.66rem
 
                 li:after
                     width: 100%

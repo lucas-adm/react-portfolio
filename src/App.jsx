@@ -1,6 +1,6 @@
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import Home from './pages/home'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 
 import './styles/main.sass'
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

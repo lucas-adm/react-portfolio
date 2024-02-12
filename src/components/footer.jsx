@@ -1,6 +1,6 @@
 import '../styles/components/footer.sass'
 
-const footer = () => {
+const Footer = () => {
     return (
         <footer>
             <div className="container-footer">
@@ -31,4 +31,4 @@ const footer = () => {
     )
 }
 
-export default footer
+export default Footer

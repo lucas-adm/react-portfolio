@@ -18,11 +18,11 @@
         .container-areas
             width: 100%
             @include mixins.flex-column
-            justify-content: center
             gap: 3rem 0
 
             .container-area
-                width: 100%
+                width: 75%
+                margin: 0 auto
                 @include mixins.flex-column
                 gap: 2rem 0
 
@@ -35,10 +35,11 @@
                 .container-languages
                     width: 100%
                     display: grid
-                    grid-template-columns: 1fr 1fr
-                    justify-content: space-between
+                    grid-template-columns: 1fr
+                    gap: 1rem
 
                     .strong-languages, .weak-languages
+                        width: 100%
                         @include mixins.flex-column
 
                         .languages
@@ -59,3 +60,23 @@
 
             button:hover
                 filter: opacity(.85)
+
+    @media screen and ( max-width: 1115px )
+
+        .container-skills
+            grid-template-columns: 1fr
+            gap: 2rem
+            .container-areas
+                .container-area
+                    width: 100%
+                    .container-languages
+                        grid-template-columns: 1fr 1fr
+
+    @media screen and ( max-width: 910px )
+        width: 100%
+        .container-skills
+            .container-areas
+                .container-area
+                    width: 100%
+                    .container-languages
+                        grid-template-columns: 1fr

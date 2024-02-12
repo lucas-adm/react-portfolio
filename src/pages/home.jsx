@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <main>
       <HomeProfile />
-      {/* <HomeSkills /> */}
+      <HomeSkills />
     </main>
   )
 }

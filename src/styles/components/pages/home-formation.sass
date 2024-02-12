@@ -1,0 +1,55 @@
+@use '../../variables'
+@use '../../mixins'
+
+.container-formation
+    @include mixins.flex-column
+    max-width: 1300px
+    margin: 0 auto
+    gap: 3.33rem
+
+    .container-title
+
+    .container-details
+        min-width: 100%
+        margin: 0 auto
+        @include mixins.flex-column
+        justify-content: flex-start
+        gap: 2rem 0
+        padding-left: 4.44rem
+
+        details
+            width: 50vw
+
+            summary
+                cursor: pointer
+                position: relative
+                margin-bottom: 1rem
+
+            summary:before
+                content: ""
+                display: inline-block
+                height: 1.3rem
+                width: 1.3rem
+                background: variables.$gradient
+                border: 8px solid variables.$light
+                border-radius: 50%
+                position: absolute
+                top: .111rem
+                left: -4rem
+                transition: 0.5s
+
+            summary:hover:before
+                border: 8px solid #f4c4b8
+
+        details[open] summary:before
+            border: 8px solid #f4c4b8
+
+    @media screen and ( max-width: 750px )
+
+        .container-title
+
+        .container-details
+            padding-left: 2rem
+
+            details
+                width: 75vw

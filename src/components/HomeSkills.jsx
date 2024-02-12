@@ -7,8 +7,8 @@ const HomeSkills = () => {
         <section>
             <div className="section-skills">
                 <div className="container-title">
-                    <span>Minhas habilidades</span>
-                    <h2>Tech Stack</h2>
+                    <span>Minhas habilidades.</span>
+                    <h2>Tech Stack.</h2>
                 </div>
                 <div className="container-skills">
                     <div className="container-areas">

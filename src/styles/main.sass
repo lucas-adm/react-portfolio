@@ -14,11 +14,12 @@ html
 
     body
         background-color: variables.$light
+        @include mixins.flex-column
 
         section
             max-width: 100vw
             @include mixins.flex-column
-            gap: 3.33rem
+            margin-bottom: 7.77rem
 
         h1
             font-size: 5rem

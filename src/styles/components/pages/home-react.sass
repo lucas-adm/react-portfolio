@@ -1,0 +1,60 @@
+@use '../../variables'
+@use '../../mixins'
+
+.container
+    max-width: 1300px
+    margin: 0 auto
+
+    .container-react
+        margin: 3.5rem
+        @include mixins.flex-column
+        gap: 4rem 0
+        background-color: #cfe2f3
+        border-radius: 3rem
+        padding: 7.77rem
+
+        .container-logo
+            @include mixins.flex-center
+
+            .logo
+                width: fit-content
+                position: relative
+
+                span
+                    left: -2rem
+                    background: #61DAFB
+                    color: variables.$h-color
+
+                hr
+                    position: absolute
+                    width: 15rem
+                    top: 5rem
+                    border: .15rem solid #61DAFB
+                    box-shadow: variables.$bottom-shadow
+
+                .hr-1
+                    left: 11.11rem
+
+                .hr-2
+                    right: 11.11rem
+
+        a
+            margin: 0 auto
+
+    @media screen and ( max-width: 666px )
+
+        .container-react
+            width: 98%
+            margin: 0 auto
+            gap: 3rem 0
+            padding: 3rem
+            border-radius: 1.5rem
+            .container-logo
+
+                .logo
+
+                    hr
+                        width: 7rem
+
+            p
+                text-align: center

@@ -1,6 +1,6 @@
-@use '../../variables'
-@use '../../mixins'
-@use '../icons'
+@use '../../../variables'
+@use '../../../mixins'
+@use '../../icons'
 
 .section-skills
     @include mixins.flex-column
@@ -8,7 +8,7 @@
     margin: 0 auto
 
     .container-title
-        padding: 0 3.5rem
+        padding: 0 10.5rem
 
     .container-skills
         display: grid
@@ -62,6 +62,9 @@
                 filter: opacity(.85)
 
     @media screen and ( max-width: 1115px )
+
+        .container-title
+            padding: 0 3.5rem
 
         .container-skills
             grid-template-columns: 1fr

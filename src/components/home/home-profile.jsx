@@ -1,10 +1,25 @@
+import { useState } from 'react'
 import { FaGithub, FaLinkedinIn, FaWhatsapp, FaCopy } from 'react-icons/fa'
 
-import '../styles/components/pages/home-profile.sass'
+import '../../styles/components/pages/home/home-profile.sass'
 
-import avatar from '../imgs/Samurai.png'
+import avatar from '../../imgs/Samurai.png'
 
 const HomeProfile = () => {
+
+    const [isCopied, setIsCopied] = useState(false)
+
+    const handleCopyClick = () => {
+
+        navigator.clipboard.writeText('vintesetelucas@gmail.com')
+
+        setIsCopied(true)
+
+        setTimeout(() => {
+            setIsCopied(false)
+        }, 1000);
+    }
+
     return (
         <section>
             <div className="container-apresentation">
@@ -17,11 +32,11 @@ const HomeProfile = () => {
                             <a href="https://www.linkedin.com/in/lucas-admoraes" target="_blank"><FaLinkedinIn id="in" /></a>
                             <a href="https://web.whatsapp.com/send/?phone=5535998963318" target="_blank"><FaWhatsapp id="wpp" /></a>
                             <div className="svg-email">
-                                <button><FaCopy /></button>
+                                <button onClick={handleCopyClick} onTouchEnd={handleCopyClick}><FaCopy /></button>
                                 <input type="text" value="vintesetelucas@gmail.com" disabled />
-                                <div className="copied">
-                                    <p>Copied to clipboard</p>
+                                <div className={`copied ${isCopied ? '' : 'none'}`}>
                                 </div>
+                                <p className={`${isCopied ? '' : 'none'}`} >copied to clipboard.</p>
                             </div>
                         </div>
                     </div>

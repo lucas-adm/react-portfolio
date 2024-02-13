@@ -1,6 +1,6 @@
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar'
 import Home from './pages/home'
-import Footer from './components/Footer'
+import Footer from './components/footer'
 
 import './styles/main.sass'
 

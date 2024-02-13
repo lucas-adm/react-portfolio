@@ -1,7 +1,8 @@
-import HomeProfile from '../components/HomeProfile'
-import HomeSkills from '../components/HomeSkills'
-import HomeFormation from '../components/home-formation'
-import HomeReact from '../components/home-react'
+import HomeProfile from '../components/home/home-profile'
+import HomeSkills from '../components/home/home-skills'
+import HomeFormation from '../components/home/home-formation'
+import HomeReact from '../components/home/home-react'
+
 
 const Home = () => {
   return (

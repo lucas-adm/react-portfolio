@@ -1,5 +1,5 @@
-@use '../../variables'
-@use '../../mixins'
+@use '../../../variables'
+@use '../../../mixins'
 
 .container-apresentation
     @include mixins.flex-center
@@ -67,13 +67,9 @@
                     button
                         border-radius: .5rem 0 0 .5rem
                         box-shadow: none
-                        background: variables.$gradient
-                        transition: all ease-in-out .2s
+
                         svg
                             font-size: 2.5rem
-
-                    button:hover
-                        transform: scale(1.07)
 
                     button:active
                         top: 0
@@ -88,7 +84,6 @@
                         background-color: variables.$white
 
                     .copied
-                        display: none
                         position: absolute
                         width: 75%
                         height: 100%
@@ -102,10 +97,24 @@
                                 left: 10%
                             to
                                 left: 25%
-                        p
-                            @include mixins.flex-center
-                            padding-top: 1.25rem
-                            color: variables.$white
+
+                    p
+                        position: absolute
+                        width: fit-content
+                        left: 23.33%
+                        top: 27.77%
+                        color: variables.$white
+
+                        @media screen and ( max-width: 520px )
+                            left: 16.33%
+                            top: 0
+                            font-size: 1.666rem
+
+                        @media screen and ( max-width: 415px )
+                            top: 11.11%
+
+                    p.none, .copied.none
+                        display: none
 
         .apresentation-art
             @include mixins.flex-center

@@ -1,4 +1,4 @@
-import '../styles/components/pages/home-formation.sass'
+import '../../styles/components/pages/home/home-formation.sass'
 
 const HomeFormation = () => {
     return (

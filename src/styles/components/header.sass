@@ -9,6 +9,7 @@ header
     left: 0
     width: 100vw
     padding: 3.5rem 0
+    transition: ease-in-out .333s
 
     nav
         @include mixins.flex-center
@@ -38,7 +39,7 @@ header
             .close
                 display: none
                 font-size: 3.25rem
-                color: red
+                color: variables.$carmesim-red
 
         ul
             @include mixins.flex-center
@@ -113,3 +114,8 @@ header
 
                 li:after
                     width: 100%
+
+header.scrolling
+    padding: 0.5rem
+    background-color: variables.$lighter
+    box-shadow: variables.$bottom-shadow

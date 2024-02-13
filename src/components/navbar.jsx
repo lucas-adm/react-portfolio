@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { FaBars } from 'react-icons/fa'
 import { IoMdClose } from "react-icons/io";
@@ -7,6 +7,20 @@ import '../styles/components/header.sass'
 
 const Navbar = () => {
 
+    const [isScrolling, setIsScrolling] = useState(false)
+
+    const handleScroll = () => {
+        window.scrollY > 0 ? setIsScrolling(true) : setIsScrolling(false)
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const toggleMenu = () => {
@@ -14,7 +28,7 @@ const Navbar = () => {
     };
 
     return (
-        <header>
+        <header className={`${isScrolling ? 'scrolling' : ''}`}>
             <nav>
                 <div className={`name ${isMenuOpen ? 'open' : ''}`}>
                     <a href="/">

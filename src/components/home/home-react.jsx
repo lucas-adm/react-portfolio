@@ -1,8 +1,8 @@
 import { FaCode } from "react-icons/fa";
 
-import Icons from '../components/Icons'
+import Icons from '../icons'
 
-import '../styles/components/pages/home-react.sass'
+import '../../styles/components/pages/home/home-react.sass'
 
 const HomeReact = () => {
     return (

@@ -1,6 +1,6 @@
-import Icons from './Icons'
+import Icons from '../icons'
 
-import '../styles/components/pages/home-skills.sass'
+import '../../styles/components/pages/home/home-skills.sass'
 
 const HomeSkills = () => {
     return (
@@ -63,7 +63,7 @@ const HomeSkills = () => {
                         <p>Navegue até a seção de experiência para visualizar meus projetos mais completos!</p>
                         <button>Ver seção</button>
                         <p>Ou se preferir poderá visualizar todos os meus repositórios de projetos pessoais finalizados dos mais antigos ao mais atuais.</p>
-                        <button>Ver repositórios</button>
+                        <a href="https://github.com/lucas-adm?tab=repositories" target="_blank"><button>Ver repositórios</button></a>
                     </div>
                 </div>
             </div>

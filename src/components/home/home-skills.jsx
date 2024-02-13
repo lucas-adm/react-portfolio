@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import Icons from '../icons'
 
 import '../../styles/components/pages/home/home-skills.sass'
@@ -61,7 +63,7 @@ const HomeSkills = () => {
                     <div className="container-invite">
                         <h3>Confira meus projetos</h3>
                         <p>Navegue até a seção de experiência para visualizar meus projetos mais completos!</p>
-                        <button>Ver seção</button>
+                        <Link to="/experiencia"><button>Ver seção</button></Link>
                         <p>Ou se preferir poderá visualizar todos os meus repositórios de projetos pessoais finalizados dos mais antigos ao mais atuais.</p>
                         <a href="https://github.com/lucas-adm?tab=repositories" target="_blank"><button>Ver repositórios</button></a>
                     </div>

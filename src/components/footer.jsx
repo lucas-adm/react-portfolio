@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import '../styles/components/footer.sass'
 
 const Footer = () => {
@@ -5,17 +7,17 @@ const Footer = () => {
         <footer>
             <div className="container-footer">
                 <div className="name">
-                    <a href="/">
+                    <Link to="/">
                         <h1 className="alvinegro">Lucas</h1>
                         <h1 className="gradient">AdM</h1>
-                    </a>
+                    </Link>
                 </div>
                 <div className="footer-list">
                     <h2>Seção</h2>
                     <ul>
-                        <a href="/"><li>Sobre</li></a>
-                        <a href="/"><li>Experiências</li></a>
-                        <a href="/"><li>Certificados</li></a>
+                        <Link to="/sobre"><li>Sobre</li></Link>
+                        <Link to="/experiencia"><li>Experiências</li></Link>
+                        <Link to="/certificados"><li>Certificados</li></Link>
                     </ul>
                 </div>
                 <div className="footer-list">

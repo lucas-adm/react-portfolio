@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import { FaBars } from 'react-icons/fa'
@@ -31,19 +32,19 @@ const Navbar = () => {
         <header className={`${isScrolling ? 'scrolling' : ''}`}>
             <nav>
                 <div className={`name ${isMenuOpen ? 'open' : ''}`}>
-                    <a href="/">
+                    <Link to="/">
                         <h1 className="alvinegro">Lucas</h1>
                         <h1 className="gradient">AdM</h1>
-                    </a>
+                    </Link>
                 </div>
                 <div className='icons' onClick={toggleMenu}>
                     <FaBars className={`bars ${isMenuOpen ? 'open' : ''}`} />
                     <IoMdClose className={`close ${isMenuOpen ? 'open' : ''}`} />
                 </div>
                 <ul className={isMenuOpen ? 'open' : ''}>
-                    <a href="/"><li>Sobre</li></a>
-                    <a href="/"><li>Experiência</li></a>
-                    <a href="/"><li>Certificados</li></a>
+                    <Link to="/sobre"><li>Sobre</li></Link>
+                    <Link to="/experiencia"><li>Experiência</li></Link>
+                    <Link to="/certificados"><li>Certificados</li></Link>
                 </ul>
             </nav>
         </header >

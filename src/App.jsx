@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './scrollToTop'
 
 import Navbar from './components/navbar'
 
@@ -10,19 +11,19 @@ import Footer from './components/footer'
 import './styles/main.sass'
 
 function App() {
-
   return (
     <Router>
-      <Navbar />
 
+    <ScrollToTop/>
+
+      <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/experiencia" element={<Experience />} />
       </Routes>
-
       <Footer />
-    </Router>
 
+    </Router>
   )
 }
 

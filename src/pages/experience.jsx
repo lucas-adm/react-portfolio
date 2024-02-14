@@ -81,6 +81,7 @@ const Experience = () => {
                                 <Icons src="PostgreSQL" name="PostgreSQL" w="50" h="50" />
                                 <Icons src="Java" name="Java" w="50" h="50" />
                                 <Icons src="Spring" name="Spring" w="50" h="50" />
+                                <Icons src="JWT" name="JWT" w="50" h="50" />
                                 <Icons src="Docker" name="Docker" w="50" h="50" />
                             </div>
                         </div>

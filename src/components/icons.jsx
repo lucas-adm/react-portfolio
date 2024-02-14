@@ -7,6 +7,7 @@ const Icons = ({ src, name, w, h }) => {
         PostgreSQL: 'https://i.imgur.com/pYOtjsr.png',
         Java: 'https://i.imgur.com/PYuVCME.png',
         Spring: 'https://i.imgur.com/X4DkoRI.png',
+        JWT: 'https://i.imgur.com/WrO17lv.png',
         Node: 'https://i.imgur.com/b40seLt.png',
         Express: 'https://i.imgur.com/xeNn9RX.png',
         Python: 'https://i.imgur.com/5CNebiv.png',

@@ -35,6 +35,8 @@
 
                 a
                     width: fit-content
+                    border-radius: 1.5rem
+                    overflow: hidden
 
                     svg
                         font-size: 4.75rem
@@ -42,7 +44,7 @@
                         padding: .5rem
                         border-radius: 1.5rem
                         box-shadow: variables.$shadow
-                        transition: all ease-in-out .125s
+                        transition: all ease-in-out .2s
 
                     #github
                         background: #111
@@ -54,7 +56,7 @@
                         background: #25D366
 
                     svg:hover
-                        transform: scale(1.05)
+                        transform: scale(1.125)
 
                 .svg-email
                     position: relative
@@ -122,10 +124,18 @@
             padding: 3.5rem
             filter: drop-shadow(variables.$bottom-shadow)
 
-            > img
-                position: relative
-                width: 90%
+            .image
+                overflow: hidden
                 border-radius: 50%
+
+                img
+                    position: relative
+                    width: 95%
+                    border-radius: 50%
+                    transition: ease-in-out .333s
+
+            .image:hover img
+                transform: scale(1.1)
 
             .square-1
                 z-index: -1

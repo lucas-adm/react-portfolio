@@ -1,0 +1,75 @@
+@use '../../variables'
+@use '../../mixins'
+
+.container-section
+    max-width: 1200px
+    padding-top: 15rem
+    margin: 0 auto
+    @include mixins.flex-column
+    gap: 5rem
+    padding: 10rem 2.5rem 2.5rem 2.5rem
+
+    .title
+        @include mixins.flex-column
+        gap: 1rem
+
+    .container-projects
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 6.66rem
+
+        .project
+            @include mixins.flex-column
+            gap: 1.5rem
+
+            > a
+                overflow: hidden
+                border-radius: 1rem
+
+                img
+                    width: 100%
+                    border-radius: 1rem
+                    box-shadow: variables.$shadow
+                    transition: ease-in-out .333s
+
+            > a:hover img
+                transform: scale(1.15)
+
+            .container-languages
+                @include mixins.flex-column
+
+                .language
+                    @include mixins.flex-center
+                    justify-content: start
+
+                    img
+                        box-shadow: none
+
+                    span
+                        width: 8.88rem
+                        left: -2rem
+
+            .buttons
+                @include mixins.flex-center
+                justify-content: start
+                gap: 2rem
+
+                button
+                    width: 11.11rem
+
+        .project:nth-child(even)
+            margin-top: 15rem
+            margin-bottom: -15rem
+
+        .project:last-child
+            margin-bottom: 0
+
+    @media screen and ( max-width: 580px  )
+
+        .container-projects
+            grid-template-columns: 1fr
+            gap: 7.77rem
+
+            .project:nth-child(even)
+                margin-top: 0
+                margin-bottom: 0

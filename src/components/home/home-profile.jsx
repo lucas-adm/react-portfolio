@@ -41,7 +41,9 @@ const HomeProfile = () => {
                         </div>
                     </div>
                     <div className="apresentation-art">
-                        <img src={avatar} alt="Profile picture" />
+                        <div className="image">
+                            <img src={avatar} alt="Profile picture" />
+                        </div>
                         <div className="square-1"></div>
                         <div className="square-2"></div>
                     </div>

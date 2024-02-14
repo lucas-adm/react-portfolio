@@ -2,12 +2,6 @@ import Icons from '../components/icons'
 
 import '../styles/components/experience/experience.sass'
 
-import imgHotel from '../imgs/projects/Hotel.png'
-import imgMoviesLib from '../imgs/projects/MoviesLib.png'
-import imgBlog from '../imgs/projects/Blog.png'
-import imgPokedex from '../imgs/projects/Pokedex.png'
-import imgForum from '../imgs/projects/Forum.png'
-
 const Experience = () => {
     return (
         <section>
@@ -20,7 +14,7 @@ const Experience = () => {
 
                     <div className="project">
                         <h3>Hotel Alura</h3>
-                        <a href="https://one-challenge-hotel.onrender.com" target="_blank"><img src={imgHotel} alt="Imagem do Hotel Alura" /></a>
+                        <a href="https://one-challenge-hotel.onrender.com" target="_blank"><img src="imgs/projects/Hotel.png" alt="Imagem do Hotel Alura" /></a>
                         <p>Aplicação Full Stack para o cadastro de reservas e hóspedes em um hotel utilizando Spring Boot 3</p>
                         <div className="container-languages">
                             <span>Tecnologia utilizada</span>
@@ -40,7 +34,7 @@ const Experience = () => {
 
                     <div className="project">
                         <h3>Movies Lib</h3>
-                        <a href="https://react-vite-imdb.onrender.com" target="_blank"><img src={imgMoviesLib} alt="Imagem do site Movies Lib" /></a>
+                        <a href="https://react-vite-imdb.onrender.com" target="_blank"><img src="imgs/projects/MoviesLib.png" alt="Imagem do site Movies Lib" /></a>
                         <p>Aplicação feita com React+Vite utilizando a RESTful API de IMDb para fim de estudo</p>
                         <div className="container-languages">
                             <span>Tecnologia utilizada</span>
@@ -57,7 +51,7 @@ const Experience = () => {
 
                     <div className="project">
                         <h3>Pokédex</h3>
-                        <a href="https://lucas-adm.github.io/dio-challenge-javascript-pokedex/" target="_blank"><img src={imgPokedex} alt="Imagem do Pokémon Zangoose" /></a>
+                        <a href="https://lucas-adm.github.io/dio-challenge-javascript-pokedex/" target="_blank"><img src="imgs/projects/Pokedex.png" alt="Imagem do Pokémon Zangoose" /></a>
                         <p>Aplicação feita em Vanilla JS consumindo a RESTful API de PokéAPI</p>
                         <div className="container-languages">
                             <span>Tecnologia utilizada</span>
@@ -73,7 +67,7 @@ const Experience = () => {
 
                     <div className="project">
                         <h3>Fórum Alura</h3>
-                        <a href="https://forum-cg7l.onrender.com/swagger-ui.html" target="_blank"><img src={imgForum} alt="Imagem da interface Swagger para a API Rest do Fórum Alura" /></a>
+                        <a href="https://forum-cg7l.onrender.com/swagger-ui.html" target="_blank"><img src="imgs/projects/Forum.png" alt="Imagem da interface Swagger para a API Rest do Fórum Alura" /></a>
                         <p>API REST simbolizando o fórum Alura disponibilizado para usuários postarem perguntas e respostas</p>
                         <div className="container-languages">
                             <span>Tecnologia utilizada</span>
@@ -93,7 +87,7 @@ const Experience = () => {
 
                     <div className="project">
                         <h3>Blog</h3>
-                        <a href="https://angular-blog-2mq9.onrender.com/" target="_blank"><img src={imgBlog} alt="Imagem do Blog feito com Angular" /></a>
+                        <a href="https://angular-blog-2mq9.onrender.com/" target="_blank"><img src="imgs/projects/Blog.png" alt="Imagem do Blog feito com Angular" /></a>
                         <p>Blog responsivo feito com Angular e TypeScript com carregamento dinâmico geral e individual para cada artigo vindo de um DB artificial localizado em: src/app/pages/data e utilizando o conceito SPA</p>
                         <div className="container-languages">
                             <span>Tecnologia utilizada</span>

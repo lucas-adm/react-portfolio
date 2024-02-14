@@ -1,9 +1,8 @@
 import { useState } from 'react'
+
 import { FaGithub, FaLinkedinIn, FaWhatsapp, FaCopy } from 'react-icons/fa'
 
 import '../../styles/components/pages/home/home-profile.sass'
-
-import avatar from '../../imgs/Samurai.png'
 
 const HomeProfile = () => {
 
@@ -42,7 +41,7 @@ const HomeProfile = () => {
                     </div>
                     <div className="apresentation-art">
                         <div className="image">
-                            <img src={avatar} alt="Profile picture" />
+                            <img src='imgs/Samurai.png' alt="Profile picture" />
                         </div>
                         <div className="square-1"></div>
                         <div className="square-2"></div>

@@ -5,6 +5,7 @@ import Navbar from './components/navbar'
 
 import Home from './pages/home'
 import Experience from './pages/experience'
+import Certificates from './pages/certificates'
 
 import Footer from './components/footer'
 
@@ -14,12 +15,13 @@ function App() {
   return (
     <Router>
 
-    <ScrollToTop/>
+      <ScrollToTop />
 
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/experiencia" element={<Experience />} />
+        <Route exact path="/certificados" element={<Certificates />} />
       </Routes>
       <Footer />
 

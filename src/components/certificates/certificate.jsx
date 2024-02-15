@@ -1,9 +1,9 @@
-import Imgs from "./certificates-imgs"
+import CertificateImgs from "./certificates-imgs"
 
 const Certificate = () => {
     return (
         <>
-        <Imgs course="dio" certified="conclusao"/>
+            <Imgs course="" certified="" />
         </>
     )
 }

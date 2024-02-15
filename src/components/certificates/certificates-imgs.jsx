@@ -1,4 +1,4 @@
-const Imgs = ({ course, certified }) => {
+const CertificateImgs = ({ course, certified, hasBack }) => {
     const data_certificate = {
         one: {
             conclusao: {
@@ -52,10 +52,18 @@ const Imgs = ({ course, certified }) => {
 
     return (
         <>
-            <img src={frontImg} alt={certified} />
-            <img src={backImg} alt={certified} />
+            {hasBack === "y" ? (
+                <a href="/" className="hasBack">
+                    <img src={frontImg} alt={certified} className="front-img" />
+                    <img src={backImg} alt={certified} className="back-img" />
+                </a>
+            ) : (
+                <a href="/" className="hasNot">
+                    <img src={frontImg} alt={certified} />
+                </a>
+            )}
         </>
     )
 }
 
-export default Imgs
+export default CertificateImgs

@@ -1,6 +1,6 @@
 import Icons from '../components/icons'
 
-import '../styles/components/experience/experience.sass'
+import '../styles/components/pages/experience/experience.sass'
 
 const Experience = () => {
     return (

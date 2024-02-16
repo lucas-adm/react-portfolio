@@ -4,16 +4,16 @@ import '../styles/components/pages/certificates/certificates.sass'
 
 const Certificates = () => {
     return (
-        <section>
+        <section className="certificates-section">
             <div className="container-section">
                 <div className="title">
                     <span>Algumas de minhas</span>
-                    <h2>Certificações</h2>
+                    <h2>Certificações:</h2>
                 </div>
                 <div className="container-certificates">
 
                     <div className="certificate">
-                        <CertificateImgs course="senai" certified="conclusao" />
+                        <CertificateImgs course="senai" certified="conclusao" hasBack="n" />
                     </div>
 
                     <div className="certificate">
@@ -21,7 +21,7 @@ const Certificates = () => {
                     </div>
 
                     <div className="certificate">
-                        <CertificateImgs course="dio" certified="conclusao" />
+                        <CertificateImgs course="dio" certified="conclusao" hasBack="n" />
                     </div>
 
                     <div className="certificate">
@@ -37,15 +37,15 @@ const Certificates = () => {
                     </div>
 
                     <div className="certificate">
-                        <CertificateImgs course="dio" certified="angular" />
+                        <CertificateImgs course="dio" certified="angular" hasBack="n" />
                     </div>
 
                     <div className="certificate">
-                        <CertificateImgs course="dio" certified="typescript" />
+                        <CertificateImgs course="dio" certified="typescript" hasBack="n" />
                     </div>
 
                     <div className="certificate">
-                        <CertificateImgs course="dio" certified="fundamentos" />
+                        <CertificateImgs course="dio" certified="fundamentos" hasBack="n" />
                     </div>
 
                     <div className="certificate">

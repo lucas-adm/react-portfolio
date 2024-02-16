@@ -1,72 +1,95 @@
 @use '../../../variables'
 @use '../../../mixins'
 
-.container-section
-    max-width: 1300px
-    width: 100vw
-    margin: 0 auto
-    @include mixins.flex-column
-    gap: 6.666rem
-    padding: 15rem 2.5rem 2.5rem 2.5rem
+.certificates-section
 
-    .title
+    .container-section
+        max-width: 1300px
+        width: 100vw
+        margin: 0 auto
         @include mixins.flex-column
-        gap: .5rem
+        gap: 6.666rem
+        padding: 15rem 2.5rem 2.5rem 2.5rem
 
-    .container-certificates
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
-        gap: 30rem 3.33rem
+        .title
+            @include mixins.flex-column
+            gap: .5rem
 
-        .certificate
-            position: relative
+        .container-certificates
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            gap: 30rem 3.33rem
 
-            a
-                width: 100%
-                position: absolute
-                background: none
-                border-radius: .75rem
+            > .certificate
+                position: relative
 
-                img
+                a.link
                     width: 100%
+                    position: absolute
+                    background: none
                     border-radius: .75rem
-                    box-shadow: variables.$shadow
 
-                .front-img
-                    position: absolute
-                    backface-visibility: hidden
+                    img
+                        width: 100%
+                        border-radius: .75rem
+                        box-shadow: variables.$shadow
 
-                .back-img
-                    position: absolute
-                    backface-visibility: hidden
+                    .front-img
+                        position: absolute
+                        backface-visibility: hidden
+
+                    .back-img
+                        position: absolute
+                        backface-visibility: hidden
+                        transform: rotateY(180deg)
+
+                a.hasBack
+                    transform-style: preserve-3d
+                    transition: ease-in-out .5s
+
+                a.hasBack:hover
                     transform: rotateY(180deg)
 
-            a.hasBack
-                transform-style: preserve-3d
-                transition: ease-in-out .5s
+                a.hasNot
+                    transition: ease-in-out .25s
 
-            a.hasBack:hover
-                transform: rotateY(180deg)
+                a.hasNot:hover
+                    transform: scale(1.025)
 
-            a.hasNot
-                transition: ease-in-out .25s
+                a.a
+                    display: none
 
-            a.hasNot:hover
-                transform: scale(1.025)
+            .certificate:last-child
+                margin-bottom: 20rem
 
-        .certificate:last-child
-            margin-bottom: 20rem
+        @media screen and ( max-width: 1280px )
+            max-width: 1200px
+            width: 100vw
+            
+        
+        @media screen and ( max-width: 1200px )
 
-    @media screen and ( max-width: 1200px )
+            .container-certificates
+                grid-template-columns: 1fr 1fr
+                gap: 34vw 3.33rem
 
-        .container-certificates
-            grid-template-columns: 1fr 1fr
-            gap: 34vw 3.33rem
+                .certificate:last-child
+                    margin-bottom: 30rem
 
-    @media screen and ( max-width: 766px )
+        @media screen and ( max-width: 766px )
 
-        width: 100vw
+            width: 100vw
+            padding: 15rem 1rem 2.5rem 1rem
 
-        .container-certificates
-            grid-template-columns: 1fr
-            gap: 66.6vw 3.33rem
+            .container-certificates
+                grid-template-columns: 1fr
+                gap: 69.9vw 3.33rem
+
+                .certificate:last-child
+                    margin-bottom: 40rem
+
+        @media screen and ( max-width: 550px )
+
+            .container-certificates
+                .certificate:last-child
+                    margin-bottom: 25rem

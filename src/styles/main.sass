@@ -28,9 +28,11 @@ html
 
         .alvinegro
             @include mixins.alvinegro-text
+            filter: drop-shadow(variables.$bottom-shadow)
 
         .gradient
             @include mixins.gradient-text
+            filter: drop-shadow(variables.$bottom-shadow)
 
         h2
             font-size: 4rem
@@ -70,5 +72,6 @@ html
             filter: opacity(.666)
 
         strong
-            @include mixins.gradient-text
+            color: variables.$h-color
             font-size: 2rem
+            text-shadow: variables.$bottom-shadow

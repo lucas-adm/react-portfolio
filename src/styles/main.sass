@@ -28,11 +28,9 @@ html
 
         .alvinegro
             @include mixins.alvinegro-text
-            filter: drop-shadow(variables.$bottom-shadow)
 
         .gradient
             @include mixins.gradient-text
-            filter: drop-shadow(variables.$bottom-shadow)
 
         h2
             font-size: 4rem
@@ -40,24 +38,28 @@ html
             letter-spacing: .025rem
 
         h3
+            font-family: "Poppins", sans-serif
             font-size: 3rem
             color: variables.$h-color
             letter-spacing: .025rem
 
         h4
+            font-family: "Poppins", sans-serif
             font-size: 2.5rem
             color: variables.$h-color
-            letter-spacing: .025rem
 
         p
+            font-family: "Poppins", sans-serif
             font-size: 1.75rem
             color: variables.$p-color
-            letter-spacing: .025rem
+            font-weight: 400
 
         span
+            font-family: "Poppins", sans-serif
             font-size: 1.5rem
             color: variables.$p-color
             letter-spacing: .025rem
+            font-weight: 500
 
         button
             cursor: pointer
@@ -74,4 +76,3 @@ html
         strong
             color: variables.$h-color
             font-size: 2rem
-            text-shadow: variables.$bottom-shadow

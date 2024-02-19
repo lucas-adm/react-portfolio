@@ -20,7 +20,7 @@ const HomeReact = () => {
                             <hr className="hr-2" />
                         </div>
                     </div>
-                    <p>Este portfólio foi desenvolvido na linguagem <strong>React</strong> e <strong>Sass</strong> para demonstrar conhecimento pessoal, garantir eficiência e torná-lo facilmente escalável</p>
+                    <p>Este portfólio foi desenvolvido na linguagem <strong>React</strong> e <strong>Sass</strong> para demonstrar conhecimento pessoal, garantir eficiência e torná-lo escalável.</p>
                     <p>Para transimitir boa experiência ao usuário devemos nos atentar à atualidade, isto é, manejar o conceito de <strong>SPA</strong> e <strong>componentização</strong>.</p>
                     <p>Este projeto foi inspirado na criação de <a href="https://marcosramoss.dev" target="_blank">@Marcos Ramos</a>.</p>
                     <p>Você pode acesar o repositório clicando no botão abaixo.</p>

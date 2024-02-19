@@ -8,6 +8,7 @@ import Home from './pages/home'
 import Experience from './pages/experience'
 import Certificates from './pages/certificates'
 import Certificate from './pages/certificate'
+import About from './pages/about'
 
 import Footer from './components/footer'
 
@@ -29,6 +30,7 @@ function HeaderFooterControl() {
         <Route exact path="/experiencia" element={<Experience />} />
         <Route exact path="/certificados" element={<Certificates />} />
         <Route exact path="/certificados/:course/:certified/:hasBack" element={<Certificate />} />
+        <Route exact path="/sobre" element={<About />} />
       </Routes>
       <Footer />
     </>

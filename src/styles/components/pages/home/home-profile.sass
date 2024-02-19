@@ -26,6 +26,7 @@
             > p
                 padding: 0 .5rem
                 line-height: 2.75rem
+                font-weight: 600
             .svgs
                 width: 100%
                 @include mixins.flex-center
@@ -75,7 +76,7 @@
 
                     button:hover
                         filter: opacity(1)
-                    
+
                     button:active
                         top: 0
 
@@ -103,7 +104,8 @@
                             to
                                 left: 25%
 
-                    p
+                    > p
+                        font-family: 'Protest Strike', sans-serif
                         position: absolute
                         width: fit-content
                         left: 23.33%
@@ -123,7 +125,7 @@
 
         .apresentation-art
             @include mixins.flex-center
-            width: 100%
+            width: 90%
             padding: 3.5rem
             filter: drop-shadow(variables.$bottom-shadow)
 
@@ -133,7 +135,7 @@
 
                 img
                     position: relative
-                    width: 95%
+                    width: 100%
                     border-radius: 50%
                     transition: ease-in-out .333s
 
@@ -198,8 +200,9 @@
 
             .apresentation-art
                 order: -1
-                margin-bottom: -6rem
+                margin: 0 auto -6rem auto
 
                 .square-1, .square-2
-                    width: 22rem
-                    height: 22rem
+                    width: 27rem
+                    height: 27rem
+                    border-radius: 3rem 8rem

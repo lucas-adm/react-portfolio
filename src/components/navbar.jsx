@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import { FaBars } from 'react-icons/fa'
@@ -7,6 +7,8 @@ import { IoMdClose } from "react-icons/io";
 import '../styles/components/header.sass'
 
 const Navbar = () => {
+
+    const location = useLocation()
 
     const [isScrolling, setIsScrolling] = useState(false)
 
@@ -29,7 +31,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className={`${isScrolling ? 'scrolling' : ''}`}>
+        <header className={`${isScrolling ? 'scrolling' : ''} ${location.pathname.startsWith('/sobre') ? 'scrolling' : ''}`}>
             <nav>
                 <div className={`name ${isMenuOpen ? 'open' : ''}`}>
                     <Link to="/">

@@ -1,0 +1,94 @@
+@use '../../../variables'
+@use '../../../mixins'
+
+.container-about
+    max-width: 1300px
+    width: 100vw
+    margin: 0 auto
+    @include mixins.flex-column
+    gap: 1.5rem
+
+    .background
+        position: relative
+        width: 90%
+        margin: 0 auto
+        height: 52vh
+        margin-top: 9rem
+        border-radius: 1rem
+        background-position: bottom
+        background-image: url(/imgs/backgrounds/background.png)
+        background-size: cover
+        box-shadow: variables.$shadow
+
+    .button
+        margin: 0 auto
+
+        > button
+            background: variables.$white
+            color: variables.$carmesim-red
+            box-shadow: variables.$shadow
+
+    .history
+        @include mixins.flex-column
+        align-items: center
+        gap: 2rem
+
+        .title-history
+            position: relative
+            width: fit-content
+
+            > .hr-1, > .hr-2
+                position: absolute
+                width: 50%
+                border: none
+                border-bottom: .25rem solid variables.$white
+                box-shadow: variables.$shadow
+                top: 1.3rem
+
+            > .hr-1
+                left: -60%
+
+            > .hr-2
+                right: -60%
+
+        .history-blocks
+            @include mixins.flex-center
+            gap: 2rem
+            flex-wrap: wrap
+            padding: 0 3rem
+
+            .history-block
+                width: 330px
+                text-align: justify
+                padding: .75rem
+                box-shadow: variables.$shadow
+                border-radius: .5em
+                background-color: variables.$white
+
+                .title-block
+
+                    > h4
+                        padding-left: .666rem
+                        @include mixins.gradient-text
+                        margin-bottom: -1rem
+
+                .info-block
+                    padding: 1rem
+
+                    > i
+                        padding: .5rem
+                        background-color: variables.$dark
+                        color: variables.$white
+                        font-size: 1.25rem
+
+    @media screen and ( max-width: 1280px )
+        max-width: 1200px
+
+    @media screen and ( max-width: 670px  )
+
+        .history
+            .title-history
+                > .hr-1, > .hr-2
+                    display: none
+            .history-blocks
+                padding: 0

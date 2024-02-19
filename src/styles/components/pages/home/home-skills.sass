@@ -13,24 +13,30 @@
     .container-skills
         display: grid
         grid-template-columns: 1fr 1fr
-        padding: 3.5rem
+        padding: 1.5rem 3.5rem
+        gap: .5rem
 
         .container-areas
             width: 100%
             @include mixins.flex-column
-            gap: 3rem 0
+            background-color: variables.$white
+            border-radius: 1.5rem
+            box-shadow: variables.$shadow
 
             .container-area
                 width: 75%
                 margin: 0 auto
                 @include mixins.flex-column
                 gap: 2rem 0
+                padding: 1rem
 
                 h3
                     width: fit-content
-                    background-color: #dbd7d2
+                    color: variables.$white
+                    background-color: variables.$h-color
                     border-radius: .75rem
                     padding: .75rem
+                    box-shadow: variables.$shadow
 
                 .container-languages
                     width: 100%
@@ -47,6 +53,10 @@
                             justify-content: start
                             flex-wrap: wrap
                             gap: 0 1rem
+
+                            .icon-block
+                                > span
+                                    width: 166.6%
 
         .container-invite
             @include mixins.flex-column
@@ -80,3 +90,8 @@
                     width: 100%
                     .container-languages
                         grid-template-columns: 1fr
+
+    @media screen and ( max-width: 520px )
+
+        .container-skills
+            padding: 1.25rem

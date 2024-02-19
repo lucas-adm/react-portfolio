@@ -6,27 +6,76 @@
     width: 100vw
     margin: 0 auto
     @include mixins.flex-column
-    gap: 1.5rem
+    gap: 1.25rem
 
     .background
         position: relative
         width: 90%
         margin: 0 auto
-        height: 52vh
-        margin-top: 9rem
+        height: 55vh
+        margin-top: 8.88rem
         border-radius: 1rem
         background-position: bottom
         background-image: url(/imgs/backgrounds/background.png)
         background-size: cover
         box-shadow: variables.$shadow
 
-    .button
-        margin: 0 auto
+        .button
+            margin: 0 auto
 
-        > button
-            background: variables.$white
-            color: variables.$carmesim-red
-            box-shadow: variables.$shadow
+            > button
+                position: relative
+                left: 50%
+                top: 50vh
+                transform: translate(-50%)
+                background: variables.$white
+                color: variables.$black
+                box-shadow: variables.$shadow
+
+                @media screen and ( max-height: 720px )
+                    top: 48vh
+
+            .curriculum
+                display: none
+                position: fixed
+                z-index: 99
+                width: 100vw
+                top: 0
+                left: 0
+                height: 100vh
+                background: rgba(0, 0, 0, .9)
+
+                > img
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    width: 640px
+                    object-fit: cover
+                    transform: translate(-50%, -50%)
+
+                > button
+                    position: relative
+                    left: 50%
+                    top: 95.75%
+                    transform: translate(-50%)
+
+            .curriculum.open
+                display: block
+
+                @media screen and ( max-height: 720px  )
+                    > img
+                        width: 35%
+
+                    > button
+                        top: 91%
+
+                @media screen and ( max-width: 650px )
+
+                    > img
+                        width: 100%
+
+                    > button
+                        top: 83%
 
     .history
         @include mixins.flex-column
@@ -62,15 +111,16 @@
                 text-align: justify
                 padding: .75rem
                 box-shadow: variables.$shadow
-                border-radius: .5em
+                border-radius: .5rem
                 background-color: variables.$white
 
                 .title-block
+                    background-color: variables.$h-color
+                    border-radius: .5rem
 
                     > h4
-                        padding-left: .666rem
-                        @include mixins.gradient-text
-                        margin-bottom: -1rem
+                        padding-left: 1rem
+                        color: variables.$white
 
                 .info-block
                     padding: 1rem
@@ -80,6 +130,7 @@
                         background-color: variables.$dark
                         color: variables.$white
                         font-size: 1.25rem
+                        border-radius: .5rem
 
     @media screen and ( max-width: 1280px )
         max-width: 1200px

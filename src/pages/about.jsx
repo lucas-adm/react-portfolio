@@ -1,21 +1,45 @@
+import { useState } from 'react'
+
 import '../styles/components/pages/about/about.sass'
 
 const About = () => {
+
+    const [cvIsOpen, setCvIsOpen] = useState(false)
+
+    const handleClick = () => {
+        setCvIsOpen(true)
+    }
+
+    const handleOutsideClick = (e) => {
+        !e.target.matches('img') ? setCvIsOpen(false) : ''
+    }
+
+    const download = () => {
+        const downloadLink = document.createElement('a')
+        downloadLink.href = '/imgs/curriculum/CV.pdf'
+        downloadLink.download = 'Lucas-AdM.pdf'
+        document.body.appendChild(downloadLink)
+        downloadLink.click()
+        document.body.removeChild(downloadLink)
+    }
+
     return (
         <section>
             <div className="container-about">
-                <div className="background"></div>
-                <div className="button">
-                    <button>Curriculum</button>
-                    {/* <div className="curriculum"> */}
-                        {/* <img src="" alt="" /> */}
-                    {/* </div> */}
+                <div className="background">
+                    <div className="button">
+                        <button onClick={handleClick}>Curriculum</button>
+                        <div className={`curriculum ${cvIsOpen ? 'open' : ''}`} onClick={handleOutsideClick}>
+                            <img src="/imgs/curriculum/CV.png" alt="" />
+                            <button onClick={download}>Download</button>
+                        </div>
+                    </div>
                 </div>
                 <div className="history">
                     <div className="title-history">
                         <p>Um pouco da minha história</p>
-                        <hr className="hr-1"/>
-                        <hr className="hr-2"/>
+                        <hr className="hr-1" />
+                        <hr className="hr-2" />
                     </div>
                     <div className="history-blocks">
                         <div className="history-block">
@@ -40,7 +64,7 @@ const About = () => {
                         </div>
                         <div className="history-block">
                             <div className="title-block">
-                                <h4>Interesse</h4>
+                                <h4>Iniciação</h4>
                             </div>
                             <div className="info-block">
                                 <p>Foi em uma Escola Técnica que aprendi os fundamento de Desenvolivmento de Sitemas, experenciei pela primeira vez uma <strong>Base de Dados</strong>, <strong>POO</strong>, <strong>Back-End</strong> e <strong>Front-End</strong>.</p>
@@ -50,6 +74,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     )

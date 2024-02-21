@@ -30,7 +30,7 @@ const About = () => {
                     <div className="button">
                         <button onClick={handleClick}>Curriculum</button>
                         <div className={`curriculum ${cvIsOpen ? 'open' : ''}`} onClick={handleOutsideClick}>
-                            <img src="/imgs/curriculum/CV.png" alt="" />
+                            <img src="/imgs/curriculum/CV.png" alt="Imagem do curriculum" />
                             <button onClick={download}>Download</button>
                         </div>
                     </div>

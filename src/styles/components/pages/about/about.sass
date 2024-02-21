@@ -44,6 +44,14 @@
                 left: 0
                 height: 100vh
                 background: rgba(0, 0, 0, .9)
+                animation: fadeIn ease-in-out .25s
+
+                @keyframes fadeIn
+                    from
+                        opacity: 0%
+
+                    to
+                        opacity: 100%
 
                 > img
                     position: absolute
@@ -52,6 +60,14 @@
                     width: 640px
                     object-fit: cover
                     transform: translate(-50%, -50%)
+                    animation: slideInImg ease-in-out .5s
+
+                    @keyframes slideInImg
+                        from
+                            transform: translate(-50%, -100%)
+
+                        to
+                            transform: translate(-50%, -50%)
 
                 > button
                     position: relative

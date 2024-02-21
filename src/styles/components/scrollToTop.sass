@@ -1,0 +1,32 @@
+@use '../variables'
+@use '../mixins'
+
+.to-top
+    cursor: pointer
+    position: fixed
+    bottom: 0rem
+    right: 3rem
+    color: variables.$white
+    background-color: variables.$black
+    border-radius: 50%
+    font-size: 3.777rem
+    padding: .5rem
+    animation: infinite pulse 1.25s, appears ease-in-out .333s forwards
+    transition: ease-in-out .25s
+
+    @keyframes pulse
+        0%
+            transform: scale(1)
+
+        50%
+            transform: scale(1.2)
+
+        100%
+            transform: scale(1)
+
+    @keyframes appears
+        from
+            bottom: 0
+
+        to
+            bottom: 6.66rem

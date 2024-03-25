@@ -1,0 +1,98 @@
+@use '../../../variables'
+@use '../../../mixins'
+
+.container-carousel
+    width: 100vw
+    max-width: 100%
+    margin: 0 auto
+    @include mixins.flex-center
+    background: variables.$carmesim-red
+    padding: 3rem 0
+    box-shadow: variables.$bottom-shadow
+
+    .heading
+        width: 30%
+        gap: 0
+        text-align: start
+        padding-left: 5rem
+
+        h1,h3
+            color: variables.$light
+            filter: drop-shadow(variables.$bottom-shadow)
+            margin-bottom: 1rem
+
+        h1
+            width: fit-content
+            color: variables.$carmesim-red
+            padding: .25rem .75rem
+            border-radius: .5rem
+            background-color: variables.$light
+
+    .languages-sliders
+        width: 70%
+        overflow-x: hidden
+
+        .languages-slider
+            position: relative
+            display: inline-flex
+            padding-top: 5rem
+            gap: 1.75rem
+
+            .languages
+                @include mixins.flex-center
+                gap: 1.75rem
+
+            @keyframes carousel
+                from
+                    transform: translateX(0%)
+
+                to
+                    transform: translateX(-100%)
+
+            .back, .front
+
+                img
+                    background: variables.$white
+                    padding: 2rem
+                    box-shadow: variables.$shadow
+                    border-radius: .333rem
+
+                :nth-child(even) img
+                    background: variables.$h-color
+
+            .back
+                animation: 20s carousel infinite linear reverse
+
+            .front
+                animation: 20s carousel infinite linear
+
+        .languages-slider:before, .languages-slider:after
+            content: ""
+            position: absolute
+            top: 0
+            z-index: 1
+            width: 75px
+            height: 100%
+
+        :before
+            left: 0
+            background: linear-gradient(to left, transparent, variables.$carmesim-red)
+
+        :after
+            right: 0
+            background: linear-gradient(to right, transparent, variables.$carmesim-red)
+
+    @media screen and ( max-width: 1279px )
+
+        @include mixins.flex-column
+        padding: 3rem 0
+
+        .heading, .languages-sliders
+            width: 100%
+            padding-left: 0
+
+        .heading
+            text-align: center
+
+            h1
+                margin: 0 auto

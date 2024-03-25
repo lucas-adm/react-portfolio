@@ -10,16 +10,17 @@ const HomeFormation = () => {
                 </div>
                 <div className="container-details">
                     <details open>
-                        <summary><a href="https://www.fiemg.com.br/senai/unidades/senai-santa-rita-do-sapucai-cdtsve-stefan-bogdan-salej/" target="_blank"><h4>Escola Técnica</h4></a></summary>
+                        <summary><h4>Escola Técnica</h4></summary>
                         <span><strong>2023 -</strong> Concluí um curso técnico de nível médio onde tive meu primeiro contato com POO utilizando Java, persistir dados em uma base de dados e utilizar a tríde básica do Front-End.</span>
                     </details>
                     <details>
-                        <summary><a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank"><h4>Oracle Next Education</h4></a></summary>
-                        <span><strong>2023 -</strong> Me tornei AlumniONE por ter completado a trilha Back-End do Projeto ONE, formado pela união das empresas Oracle e Alura a fim de lançar desenvolvedores júnior ao mercado.</span>
+                        <summary><h4>Oracle Next Education</h4></summary>
+                        <span><strong>2023 -</strong> Me tornei AlumniONE por ter completado a trilha Back-end do Projeto ONE, formado pela união das empresas Oracle e Alura a fim de lançar desenvolvedores júnior ao mercado.</span>
                     </details>
                     <details>
-                        <summary className="open"><a href="https://www.dio.me" target="_blank"><h4>DIO</h4></a></summary>
-                        <span><strong>2024 -</strong> Concluí a trilha de estudos Front-End organizada pela parceia DIO e Banco Pan focada em Angular e TypeScript.</span>
+                        <summary className="open"><h4>Digital Innovation One</h4></summary>
+                        <span><strong>2024 -</strong> Concluído o Bootcamp Front-end organizado pela parceia entre DIO e Banco Pan focado em Angular e TypeScript.</span>
+                        <span><strong>2024 -</strong> Concluído o Bootcamp Back-end organizado pela parceia entre DIO e Tonnie focado em Java Frameworks e AWS.</span>
                     </details>
                 </div>
             </div>

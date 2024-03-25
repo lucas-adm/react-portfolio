@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 
-import { FaEye } from "react-icons/fa";
 import { GiAchievement } from "react-icons/gi";
 
 const CertificateImgs = ({ course, certified, hasBack }) => {
@@ -38,21 +37,53 @@ const CertificateImgs = ({ course, certified, hasBack }) => {
             }
         },
         dio: {
-            conclusao: {
-                front: '/imgs/certificates/dio/conclusao/front.png',
+            angular_conclusao: {
+                front: '/imgs/certificates/dio/angular-ts/conclusao/front.png',
                 credential: 'https://hermes.digitalinnovation.one/certificates/KVH68PHU.pdf'
             },
             angular: {
-                front: '/imgs/certificates/dio/angular-conclusao/front.png',
+                front: '/imgs/certificates/dio/angular-ts/angular-conclusao/front.png',
                 credential: 'https://hermes.digitalinnovation.one/certificates/YOLLMNZL.pdf'
             },
-            fundamentos: {
-                front: '/imgs/certificates/dio/angular-fundamentos/front.png',
+            angular_fundamentos: {
+                front: '/imgs/certificates/dio/angular-ts/angular-fundamentos/front.png',
                 credential: 'https://hermes.digitalinnovation.one/certificates/3C214241.pdf'
             },
             typescript: {
-                front: '/imgs/certificates/dio/typescript/front.png',
+                front: '/imgs/certificates/dio/angular-ts/typescript/front.png',
                 credential: 'https://hermes.digitalinnovation.one/certificates/981AD550.pdf'
+            },
+            java_ai: {
+                front: '/imgs/certificates/dio/java-aws/conclusao/front.png',
+                credential: 'https://hermes.dio.me/certificates/WYHSEKNP.pdf'
+            },
+            aws: {
+                front: '/imgs/certificates/dio/java-aws/aws/front.png',
+                credential: 'https://hermes.dio.me/certificates/HWYRMDEV.pdf'
+            },
+            quarkus: {
+                front: '/imgs/certificates/dio/java-aws/quarkus/front.png',
+                credential: 'https://hermes.dio.me/certificates/DVWROROC.pdf'
+            },
+            microsservicos: {
+                front: '/imgs/certificates/dio/java-aws/microsservicos/front.png',
+                credential: 'https://hermes.dio.me/certificates/0IEZFBNN.pdf'
+            },
+            kafka: {
+                front: '/imgs/certificates/dio/java-aws/kafka/front.png',
+                credential: 'https://hermes.dio.me/certificates/KO1OWW0F.pdf'
+            },
+            mockito: {
+                front: '/imgs/certificates/dio/java-aws/mockito/front.png',
+                credential: 'https://hermes.dio.me/certificates/GSWOTX7O.pdf'
+            },
+            junit: {
+                front: '/imgs/certificates/dio/java-aws/junit/front.png',
+                credential: 'https://hermes.dio.me/certificates/1I9MX2HY.pdf'
+            },
+            arquitetura_hexagonal: {
+                front: '/imgs/certificates/dio/java-aws/arquitetura-hexagonal/front.png',
+                credential: 'https://hermes.dio.me/certificates/AT7OHFMT.pdf'
             }
         },
         senai: {

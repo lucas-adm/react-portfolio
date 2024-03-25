@@ -11,7 +11,7 @@ const Experience = () => {
                     <h2>Projetos pessoais.</h2>
                 </div>
                 <div className="container-projects">
-
+                    
                     <div className="project">
                         <h3>Hotel Alura</h3>
                         <a href="https://one-challenge-hotel.onrender.com" target="_blank"><img src="imgs/projects/Hotel.png" alt="Imagem do Hotel Alura" /></a>

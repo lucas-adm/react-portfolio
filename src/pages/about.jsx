@@ -59,7 +59,7 @@ const About = () => {
                             <div className="info-block">
                                 <p>Foi no mundo dos jogos que tive meu primeiro contato com programação, jamais esquecerei do saudoso Minecraft que me introduziu ao universo <strong>Java</strong> e suas funções.</p>
                                 <br />
-                                <i>set timeout 0</i> <i>keepInventory true</i>
+                                <i>time set 0</i> <i>keepInventory true</i>
                             </div>
                         </div>
                         <div className="history-block">

@@ -1,24 +1,31 @@
 import '../styles/components/icons.sass'
 
-const Icons = ({ src, name, w, h }) => {
+const Icons = ({ src, name, w, h, strong }) => {
 
     const data_icon = {
-        MySQL: 'https://i.imgur.com/denuprB.png',
-        PostgreSQL: 'https://i.imgur.com/pYOtjsr.png',
-        Java: 'https://i.imgur.com/PYuVCME.png',
-        Spring: 'https://i.imgur.com/X4DkoRI.png',
+        MySQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+        PostgreSQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+
+        Java: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+        Spring: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
+        Quarkus: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/quarkus/quarkus-original.svg',
         JWT: 'https://i.imgur.com/WrO17lv.png',
-        Node: 'https://i.imgur.com/b40seLt.png',
-        Express: 'https://i.imgur.com/xeNn9RX.png',
-        Python: 'https://i.imgur.com/5CNebiv.png',
-        Anaconda: 'https://i.imgur.com/jOp5INg.png',
-        JavaScript: 'https://i.imgur.com/tslK9s8.png',
-        TypeScript: 'https://i.imgur.com/VDrHa2s.png',
-        Sass: 'https://i.imgur.com/vcM42bY.png',
-        React: 'https://i.imgur.com/RMUkH5B.png',
-        Angular: 'https://i.imgur.com/dNjzRS3.png',
-        Puppeteer: 'https://i.imgur.com/jqoBUOz.png',
-        Docker: 'https://i.imgur.com/rnNYoco.png'
+        Docker: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
+        Python: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+        Anaconda: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg',
+        Node: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
+        Express: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
+        Puppeteer: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/puppeteer/puppeteer-original.svg',
+
+        Sass: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg',
+        JavaScript: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+        TypeScript: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+        React: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+        Angular: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
+
+        Git: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+        Railway: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg',
+        Render: 'https://simpleicons.org/icons/render.svg'
     }
 
     const icon_src = data_icon[src]

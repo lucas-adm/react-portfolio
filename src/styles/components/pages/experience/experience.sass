@@ -5,7 +5,7 @@
     max-width: 1200px
     margin: 0 auto
     @include mixins.flex-column
-    gap: 6.666rem
+    gap: 4.44rem
     padding: 15rem 2.5rem 2.5rem 2.5rem
 
     .title
@@ -41,12 +41,9 @@
                     @include mixins.flex-center
                     justify-content: start
 
-                    img
-                        box-shadow: none
-
-                    span
-                        width: 8.88rem
-                        left: -2rem
+                    .icon-block
+                        > span
+                            top: -66.6%
 
             .buttons
                 @include mixins.flex-center
@@ -56,12 +53,13 @@
                 button
                     width: 11.11rem
 
+                button:active
+                    position: relative
+                    top: -1px
+
         .project:nth-child(even)
             margin-top: 15rem
             margin-bottom: -15rem
-
-        .project:last-child
-            margin-bottom: 0
 
     @media screen and ( max-width: 580px  )
 

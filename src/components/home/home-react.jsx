@@ -1,30 +1,48 @@
-import { FaCode } from "react-icons/fa";
+import { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
 
 import Icons from '../icons'
 
 import '../../styles/components/pages/home/home-react.sass'
 
 const HomeReact = () => {
+
+    const el = useRef(null);
+
+    useEffect(() => {
+        const typed = new Typed(el.current, {
+            strings: ["Components.", "Hooks.", "SPA."],
+            startDelay: 55,
+            typeSpeed: 55,
+            backSpeed: 55,
+            backDelay: 55,
+            smartBackspace: true,
+            loop: true,
+            showCursor: true,
+        });
+
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
     return (
         <section>
-            <div className="container">
-                <div className="container-react">
-                    <div className="title">
-                        <span>Por quê</span>
-                        <h2>React?</h2>
+            <div className="container-homereact">
+                <div className="container-language">
+                    <div>
+                        <span>feito em</span>
+                        <h2>React.</h2>
                     </div>
-                    <div className="container-logo">
-                        <div className="logo">
-                            <Icons src="React" name="React" w="100" h="100" />
-                            <hr className="hr-1" />
-                            <hr className="hr-2" />
-                        </div>
+                    <div>
+                        <h4>com <i ref={el} className="typed"></i></h4>
                     </div>
-                    <p>Este portfólio foi desenvolvido na linguagem <strong>React</strong> e <strong>Sass</strong> para demonstrar conhecimento pessoal, garantir eficiência e torná-lo escalável.</p>
-                    <p>Para transimitir boa experiência ao usuário devemos nos atentar à atualidade, isto é, manejar o conceito de <strong>SPA</strong> e <strong>componentização</strong>.</p>
-                    <p>Este projeto foi inspirado na criação de <a href="https://marcosramoss.dev" target="_blank">@Marcos Ramos</a>.</p>
-                    <p>Você pode acesar o repositório clicando no botão abaixo.</p>
-                    <a href="https://github.com/lucas-adm/react-profile" target="_blank"><button><FaCode /></button></a>
+                    <div>
+                        <h4 className="reference">inspired by <a href="https://marcosramoss.dev" target="_blank">@Marcos Ramos</a> .</h4>
+                    </div>
+                </div>
+                <div className="container-tools">
+                    <Icons src="React" name="React" w="175" h="175" />
                 </div>
             </div>
         </section>

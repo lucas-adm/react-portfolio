@@ -4,23 +4,25 @@
 .container-formation
     @include mixins.flex-column
     max-width: 1300px
+    width: 55vw
     margin: 0 auto
     gap: 3.33rem
 
     .container-details
-        min-width: 100%
-        margin: 0 auto
         @include mixins.flex-column
         justify-content: flex-start
-        gap: 2rem 0
-        padding-left: 4.44rem
+        gap: 4rem 0
+        padding-left: 3rem
 
         details
-            width: 50vw
+            @include mixins.flex-column
 
             summary
                 cursor: pointer
                 position: relative
+                margin-bottom: 1rem
+
+            span
                 margin-bottom: 1rem
 
             summary:before
@@ -42,10 +44,11 @@
         details[open] summary:before
             border: 8px solid #f4c4b8
 
+    @media screen and ( max-width: 1300px )
+        max-width: 100%
+        width: 90vw
+
     @media screen and ( max-width: 750px )
 
         .container-details
-            padding-left: 2rem
-
-            details
-                width: 75vw
+            padding-left: 3rem

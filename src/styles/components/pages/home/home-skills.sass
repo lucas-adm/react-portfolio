@@ -4,94 +4,87 @@
 
 .section-skills
     @include mixins.flex-column
+    gap: 4.44rem
     max-width: 1300px
     margin: 0 auto
-
-    .container-title
-        padding: 0 10.5rem
 
     .container-skills
         display: grid
         grid-template-columns: 1fr 1fr
-        padding: 1.5rem 3.5rem
-        gap: .5rem
+        gap: 4rem
 
-        .container-areas
-            width: 100%
-            @include mixins.flex-column
-            background-color: variables.$white
-            border-radius: 1.5rem
-            box-shadow: variables.$shadow
+        .container-concepts
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 4rem 4rem
+            padding: 0 1rem
 
-            .container-area
-                width: 75%
-                margin: 0 auto
+            .concept
                 @include mixins.flex-column
-                gap: 2rem 0
-                padding: 1rem
+                gap: 2rem
 
-                h3
-                    width: fit-content
-                    color: variables.$white
-                    background-color: variables.$h-color
-                    border-radius: .75rem
-                    padding: .75rem
-                    box-shadow: variables.$shadow
+                p
+                    font-size: 1.6rem
+                    line-height: 2.75rem
 
-                .container-languages
-                    width: 100%
-                    display: grid
-                    grid-template-columns: 1fr
-                    gap: 1rem
-
-                    .strong-languages, .weak-languages
-                        width: 100%
-                        @include mixins.flex-column
-
-                        .languages
-                            @include mixins.flex-center
-                            justify-content: start
-                            flex-wrap: wrap
-                            gap: 0 1rem
-
-                            .icon-block
-                                > span
-                                    width: 166.6%
+                strong
+                    @include mixins.gradient-text
 
         .container-invite
+            background: variables.$carmesim-red
+            background-image: linear-gradient(to right, variables.$neon-red 1px, transparent 1px), linear-gradient(to bottom, variables.$neon-red 1px, transparent 1px)
+            background-size: 5rem 5rem
             @include mixins.flex-column
             justify-content: center
-            align-items: center
             text-align: center
             gap: 2.5rem 0
             padding: 3.5rem
-            border-radius: 1.5rem
-            background-color: #f3cfcf
+            border-radius: .5rem
+            box-shadow: variables.$bottom-shadow
 
-    @media screen and ( max-width: 1115px )
+            h3,p,a
+                color: white
+                filter: drop-shadow(variables.$bottom-shadow)
 
-        .container-title
-            padding: 0 3.5rem
+            a
+                z-index: 1
+                position: relative
+                font-size: 2.5rem
+                text-decoration: underline
+                width: fit-content
+                margin: 0 auto
+                transition: .25s ease-in-out
+
+            a:hover
+                color: variables.$carmesim-red
+
+            a:before
+                z-index: -1
+                content: ''
+                position: absolute
+                height: 100%
+                width: 0
+                right: 0
+                background: white
+                transition: width .333s ease
+
+            a:hover:before
+                left: 0
+                width: 100%
+
+    @media screen and ( max-width: 1330px )
+        padding: 0 2rem
+
+    @media screen and ( max-width: 1065px )
+        gap: 3.33rem
 
         .container-skills
             grid-template-columns: 1fr
-            gap: 2rem
-            .container-areas
-                .container-area
-                    width: 100%
-                    .container-languages
-                        grid-template-columns: 1fr 1fr
 
-    @media screen and ( max-width: 910px )
-        width: 100%
+            .container-concepts
+                margin-bottom: 3.33rem
+
+    @media screen and ( max-width: 525px )
         .container-skills
-            .container-areas
-                .container-area
-                    width: 100%
-                    .container-languages
-                        grid-template-columns: 1fr
-
-    @media screen and ( max-width: 520px )
-
-        .container-skills
-            padding: 1.25rem
+            .container-concepts
+                grid-template-columns: 1fr

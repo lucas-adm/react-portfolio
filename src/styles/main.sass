@@ -65,13 +65,19 @@ html
             @include mixins.btn
             letter-spacing: .025rem
 
-        button:active
-            position: relative
-            top: 1px
-
         button:hover
             filter: opacity(.666)
 
         strong
+            font-size: 1.75rem
+            font-weight: 200
             color: variables.$h-color
-            font-size: 2rem
+
+    ::-webkit-scrollbar
+        height: auto
+
+    ::-webkit-scrollbar-thumb
+        background: variables.$carmesim-red
+
+    ::-webkit-scrollbar-track
+        background: variables.$lighter

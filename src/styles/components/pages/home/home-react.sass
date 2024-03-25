@@ -1,64 +1,130 @@
 @use '../../../variables'
 @use '../../../mixins'
 
-.container
+.container-homereact
+    user-select: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    width: 100vw
     max-width: 1300px
     margin: 0 auto
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 4rem
+    background-color: #002c6f
+    filter: drop-shadow(variables.$bottom-shadow)
 
-    .container-react
-        margin: 3.5rem
+    .container-language
         @include mixins.flex-column
-        gap: 4rem 0
-        background-color: #cfe2f3
-        border-radius: 3rem
-        padding: 7.77rem
+        justify-content: center
+        gap: 3.33rem
+        height: 70.25rem
+        border-radius: .5rem 0 0 .5rem
 
-        .container-logo
-            @include mixins.flex-center
+        div
+            margin: 0 18.75%
 
-            .logo
-                width: fit-content
-                position: relative
+            span
+                color: variables.$light
 
-                span
-                    left: -2rem
-                    background: #61DAFB
-                    color: variables.$h-color
+            h2
+                color: variables.$light
+                font-weight: 500
 
-                hr
+            h4
+                color: variables.$light
+                font-weight: 300
+
+                i
+                    font-style: normal
+
+                .typed
+                    color: #00ffff
+
+                .typed-cursor
+                    color: #00ffff
+                    font-size: 2.5rem
+
+            .reference
+
+                a
+                    z-index: 1
+                    position: relative
+                    margin: 0 .5rem
+                    color: variables.$white
+                    text-decoration: underline
+                    transition: .5s
+
+                :before
+                    content: ''
+                    z-index: -1
                     position: absolute
-                    width: 15rem
-                    top: 5rem
-                    border: .15rem solid #61DAFB
-                    box-shadow: variables.$bottom-shadow
+                    right: 0
+                    width: 0
+                    height: 100%
+                    background-color: #00ffff
+                    transition: width ease .333s
 
-                .hr-1
-                    left: 11.11rem
+                :hover
+                    color: #00255e
 
-                .hr-2
-                    right: 11.11rem
+                :hover:before
+                    left: 0
+                    width: 100%
 
-        a
-            margin: 0 auto
+                :not(:hover):before
+                    width: 0
 
-            button
-                background: variables.$black
-                padding: 1rem 3rem
+    .container-tools
+        background-color: #00102a
+        background-image: linear-gradient(to right, #00255e 1px, transparent 1px), linear-gradient(to bottom, #00255e 1px, transparent 1px)
+        background-size: 10rem 10rem
+        @include mixins.flex-center
+        border-radius: 0 .5rem .5rem 0
 
-    @media screen and ( max-width: 666px )
+        .icon-block
+            pointer-events: none
 
-        .container-react
-            width: 93.25%
-            margin: 0 auto
-            gap: 3rem 0
-            padding: 3rem
-            border-radius: 1.5rem
-            .container-logo
+            img
+                filter: drop-shadow(0 0 50px #00ffff) saturate(2)
+                animation: rotation 7.77s infinite linear
 
-                .logo
+                @keyframes rotation
+                    from
+                        transform: rotate(0deg)
 
-                    hr
-                        width: 7rem
+                    to
+                        transform: rotate(359deg)
 
-            p
-                text-align: center
+            span
+                top: -25%
+                background: #00ffff
+                color: variables.$h-color
+
+    @media screen and ( max-width: 1300px )
+        max-width: 100%
+
+    @media screen and ( max-width: 1120px )
+        grid-template-columns: 1fr
+
+        .container-language
+            height: auto
+            padding: 5rem 2rem 5rem 5rem
+            border-radius: 0
+
+            div
+                margin: 0
+
+        .container-tools
+            border-radius: 0
+            padding: 6.225rem
+            order: -1
+
+    @media screen and ( max-width: 406px )
+        .container-language
+            padding: 5rem 2rem
+
+            div
+                .reference
+                    font-size: 6.5vw

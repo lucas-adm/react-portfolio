@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate, HashRouter } from 'react-router-dom'
 import ScrollToTop from './scrollToTop'
 
 import Navbar from './components/navbar'
@@ -31,7 +31,7 @@ function HeaderControl() {
         <Route exact path="/certificados" element={<Certificates />} />
         <Route exact path="/certificados/:course/:certified/:hasBack" element={<Certificate />} />
         <Route exact path="/sobre" element={<About />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </>
@@ -40,12 +40,11 @@ function HeaderControl() {
 
 function App() {
   return (
-    <Router hashType="slash">
+    <HashRouter hashType="hashbang">
       <ScrollToTop />
       <HeaderControl />
-    </Router>
+    </HashRouter>
   )
 }
-
 
 export default App

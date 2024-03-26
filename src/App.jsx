@@ -14,23 +14,24 @@ import Footer from './components/footer'
 
 import './styles/main.sass'
 
-function HeaderFooterControl() {
+function HeaderControl() {
   const location = useLocation();
-  const [shouldRenderHeaderFooter, setShouldRenderHeaderFooter] = useState(true);
+  const [shouldRenderHeader, setShouldRenderHeader] = useState(true);
 
   useEffect(() => {
-    setShouldRenderHeaderFooter(!location.pathname.startsWith('/certificados/'));
+    setShouldRenderHeader(!location.pathname.startsWith('/certificados/'));
   }, [location.pathname]);
 
   return (
     <>
-      {shouldRenderHeaderFooter && <Navbar />}
+      {shouldRenderHeader && <Navbar />}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/experiencia" element={<Experience />} />
         <Route exact path="/certificados" element={<Certificates />} />
         <Route exact path="/certificados/:course/:certified/:hasBack" element={<Certificate />} />
         <Route exact path="/sobre" element={<About />} />
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
     </>
@@ -39,9 +40,9 @@ function HeaderFooterControl() {
 
 function App() {
   return (
-    <Router>
+    <Router hashType="slash">
       <ScrollToTop />
-      <HeaderFooterControl />
+      <HeaderControl />
     </Router>
   )
 }

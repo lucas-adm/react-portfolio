@@ -11,7 +11,46 @@ const Experience = () => {
                     <h2>Projetos pessoais.</h2>
                 </div>
                 <div className="container-projects">
-                    
+
+                    <div className="project">
+                        <h3>Posts</h3>
+                        <a href="https://posts-i9sv.onrender.com/swagger-ui.html" target="_blank"><img src="imgs/projects/Posts.png" alt="Imagem da interface Swagger para a Restful API de Posts" /></a>
+                        <p>RESTful API de Posts, simulação de uma rede social e microblog, construída em Arquitetura Hexagonal em Java 17 utilizando Spring Boot 3 e os serviços de mensageria de CloudAMQP, API documentada pelo SpringDoc</p>
+                        <div className="container-languages">
+                            <span>Tecnologia utilizada</span>
+                            <div className="language">
+                                <Icons src="PostgreSQL" name="PostgreSQL" w="50" h="50" />
+                                <Icons src="Java" name="Java" w="50" h="50" />
+                                <Icons src="Spring" name="Spring" w="50" h="50" />
+                                <Icons src="JWT" name="JWT" w="50" h="50" />
+                                <Icons src="RabbitMQ" name="RabbitMQ" w="50" h="50" />
+                                <Icons src="OpenAPI" name="OpenAPI" w="50" h="50" />
+                                <Icons src="Docker" name="Docker" w="50" h="50" />
+                            </div>
+                        </div>
+                        <div className="buttons">
+                            <a href="https://posts-i9sv.onrender.com/swagger-ui.html" target="_blank"><button>Site</button></a>
+                            <a href="https://github.com/lucas-adm/springboot-posts" target="_blank"><button>Repositório</button></a>
+                        </div>
+                    </div>
+
+                    <div className="project">
+                        <h3>Costs</h3>
+                        <a href="https://project-costs-91vr.onrender.com/" target="_blank"><img src="imgs/projects/Costs.png" alt="Imagem do Projeto Costs" /></a>
+                        <p>Implementação de um sistema CRUD com React e json-server para organização de serviços iniciados pela empresa fictícia Costs</p>
+                        <div className="container-languages">
+                            <span>Tecnologia utilizada</span>
+                            <div className="language">
+                                <Icons src="JavaScript" name="JavaScript" w="50" h="50" />
+                                <Icons src="React" name="React" w="50" h="50" />
+                            </div>
+                        </div>
+                        <div className="buttons">
+                            <a href="https://project-costs-91vr.onrender.com/" target="_blank"><button>Site</button></a>
+                            <a href="https://github.com/lucas-adm/react-costs" target="_blank"><button>Repositório</button></a>
+                        </div>
+                    </div>
+
                     <div className="project">
                         <h3>Hotel Alura</h3>
                         <a href="https://one-challenge-hotel.onrender.com" target="_blank"><img src="imgs/projects/Hotel.png" alt="Imagem do Hotel Alura" /></a>
@@ -29,43 +68,6 @@ const Experience = () => {
                         <div className="buttons">
                             <a href="https://one-challenge-hotel.onrender.com" target="_blank"><button>Site</button></a>
                             <a href="https://github.com/lucas-adm/one-challenge-springboot-hotel" target="_blank"><button>Repositório</button></a>
-                        </div>
-                    </div>
-
-                    <div className="project">
-                        <h3>Costs</h3>
-                        <a href="https://project-costs-91vr.onrender.com/" target="_blank"><img src="imgs/projects/Costs.png" alt="Imagem do Projeto Costs" /></a>
-                        <p>Implementação de um sistema CRUD com React e json-server para organização de serviços iniciados pela empresa Costs</p>
-                        <div className="container-languages">
-                            <span>Tecnologia utilizada</span>
-                            <div className="language">
-                                <Icons src="JavaScript" name="JavaScript" w="50" h="50" />
-                                <Icons src="React" name="React" w="50" h="50" />
-                            </div>
-                        </div>
-                        <div className="buttons">
-                            <a href="https://project-costs-91vr.onrender.com/" target="_blank"><button>Site</button></a>
-                            <a href="https://github.com/lucas-adm/react-costs" target="_blank"><button>Repositório</button></a>
-                        </div>
-                    </div>
-
-                    <div className="project">
-                        <h3>Fórum Alura</h3>
-                        <a href="https://forum-cg7l.onrender.com/swagger-ui.html" target="_blank"><img src="imgs/projects/Forum.png" alt="Imagem da interface Swagger para a API Rest do Fórum Alura" /></a>
-                        <p>API REST simbolizando o fórum Alura disponibilizado para usuários postarem perguntas e respostas</p>
-                        <div className="container-languages">
-                            <span>Tecnologia utilizada</span>
-                            <div className="language">
-                                <Icons src="PostgreSQL" name="PostgreSQL" w="50" h="50" />
-                                <Icons src="Java" name="Java" w="50" h="50" />
-                                <Icons src="Spring" name="Spring" w="50" h="50" />
-                                <Icons src="JWT" name="JWT" w="50" h="50" />
-                                <Icons src="Docker" name="Docker" w="50" h="50" />
-                            </div>
-                        </div>
-                        <div className="buttons">
-                            <a href="https://forum-cg7l.onrender.com/swagger-ui.html" target="_blank"><button>Site</button></a>
-                            <a href="https://github.com/lucas-adm/one-challenge-springboot-forum" target="_blank"><button>Repositório</button></a>
                         </div>
                     </div>
 

@@ -21,12 +21,14 @@ const HomeCarousel = () => {
                             <Icons src="Java" name="Java" w="88.8" h="88.8" strong="y" />
                             <Icons src="Spring" name="Spring" w="88.8" h="88.8" strong="y" />
                             <Icons src="Quarkus" name="Quarkus" w="88.8" h="88.8" strong="y" />
+                            <Icons src="RabbitMQ" name="RabbitMQ" w="88.8" h="88.8" strong="y" />
+                            <Icons src="OpenAPI" name="OpenAPI" w="88.8" h="88.8" strong="y" />
                             <Icons src="Docker" name="Docker" w="88.8" h="88.8" strong="y" />
                             <Icons src="Python" name="Python" w="88.8" h="88.8" strong="n" />
                             <Icons src="Anaconda" name="Anaconda" w="88.8" h="88.8" strong="n" />
                             <Icons src="Node" name="Node.js" w="88.8" h="88.8" strong="y" />
-                            <Icons src="Puppeteer" name="Puppeteer" w="88.8" h="88.8" strong="y" />
                             <Icons src="Express" name="Express.js" w="88.8" h="88.8" strong="n" />
+                            <Icons src="Puppeteer" name="Puppeteer" w="88.8" h="88.8" strong="y" />
                             <Icons src="Railway" name="Railway" w="88.8" h="88.8" strong="n" />
                             <Icons src="Render" name="Render" w="88.8" h="88.8" strong="n" />
                             <Icons src="Git" name="Git" w="88.8" h="88.8" strong="n" />
@@ -37,12 +39,14 @@ const HomeCarousel = () => {
                             <Icons src="Java" name="Java" w="88.8" h="88.8" strong="y" />
                             <Icons src="Spring" name="Spring" w="88.8" h="88.8" strong="y" />
                             <Icons src="Quarkus" name="Quarkus" w="88.8" h="88.8" strong="y" />
+                            <Icons src="RabbitMQ" name="RabbitMQ" w="88.8" h="88.8" strong="y" />
+                            <Icons src="OpenAPI" name="OpenAPI" w="88.8" h="88.8" strong="y" />
                             <Icons src="Docker" name="Docker" w="88.8" h="88.8" strong="y" />
                             <Icons src="Python" name="Python" w="88.8" h="88.8" strong="n" />
                             <Icons src="Anaconda" name="Anaconda" w="88.8" h="88.8" strong="n" />
                             <Icons src="Node" name="Node.js" w="88.8" h="88.8" strong="y" />
-                            <Icons src="Puppeteer" name="Puppeteer" w="88.8" h="88.8" strong="y" />
                             <Icons src="Express" name="Express.js" w="88.8" h="88.8" strong="n" />
+                            <Icons src="Puppeteer" name="Puppeteer" w="88.8" h="88.8" strong="y" />
                             <Icons src="Railway" name="Railway" w="88.8" h="88.8" strong="n" />
                             <Icons src="Render" name="Render" w="88.8" h="88.8" strong="n" />
                             <Icons src="Git" name="Git" w="88.8" h="88.8" strong="n" />

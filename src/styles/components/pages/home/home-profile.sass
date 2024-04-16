@@ -159,6 +159,7 @@
                 inset: 0 25%
                 background: variables.$gradient
                 animation: rotateborder 5s linear infinite
+                transition: inset ease-in-out .444s
 
                 @keyframes rotateborder
                     0%
@@ -169,6 +170,9 @@
 
             .image:after
                 filter: blur(20rem) sepia(2)
+
+            .image:hover:before
+                inset: 0
 
     @media screen and ( max-width: 1158px  )
         width: 70%
@@ -206,4 +210,4 @@
 
             .apresentation-art
                 order: -1
-                margin: 0 auto -6rem auto
+                margin: -2rem auto -6rem auto

@@ -69,7 +69,7 @@ const About = () => {
                             <div className="info-block">
                                 <p>Foi em uma Escola Técnica que aprendi os fundamento de Desenvolivmento de Sitemas, experenciei pela primeira vez uma <strong>Base de Dados</strong>, <strong>POO</strong>, <strong>Back-End</strong> e <strong>Front-End</strong>.</p>
                                 <br />
-                                <i>TRUNCATE * FROM GAVEA</i>
+                                <i>TRUNCATE TABLE GAVEA;</i>
                             </div>
                         </div>
                     </div>

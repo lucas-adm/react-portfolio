@@ -13,9 +13,27 @@ const Experience = () => {
                 <div className="container-projects">
 
                     <div className="project">
-                        <h3>Posts</h3>
-                        <a href="https://posts-i9sv.onrender.com/swagger-ui.html" target="_blank"><img src="imgs/projects/Posts.png" alt="Imagem da interface Swagger para a Restful API de Posts" /></a>
-                        <p>RESTful API de Posts, simulação de uma rede social e microblog, construída em Arquitetura Hexagonal em Java 17 utilizando Spring Boot 3 e os serviços de mensageria de CloudAMQP, API documentada pelo SpringDoc</p>
+                        <h3>Posts (Front-End)</h3>
+                        <a href="https://srs-posts.onrender.com" target="_blank"><img src="imgs/projects/Posts-frontend.png" alt="Imagem da rede social Posts" /></a>
+                        <p>Rede Social ou Microblog construído utilizando TypeScript e React consumindo uma RESTful API feita em Java 17 e armazenando dados em uma base PostgreSQL</p>
+                        <div className="container-languages">
+                            <span>Tecnologia utilizada</span>
+                            <div className="language">
+                                <Icons src="TypeScript" name="TypeScript" w="50" h="50" />
+                                <Icons src="React" name="React" w="50" h="50" />
+                                <Icons src="Sass" name="Sass" w="50" h="50" />
+                            </div>
+                        </div>
+                        <div className="buttons">
+                            <a href="https://srs-posts.onrender.com" target="_blank"><button>Site</button></a>
+                            <a href="https://github.com/lucas-adm/react-posts" target="_blank"><button>Repositório</button></a>
+                        </div>
+                    </div>
+
+                    <div className="project">
+                        <h3>Posts (Back-End)</h3>
+                        <a href="https://posts-i9sv.onrender.com/swagger-ui.html" target="_blank"><img src="imgs/projects/Posts-backend.png" alt="Imagem da interface Swagger para a Restful API de Posts" /></a>
+                        <p>RESTful API para uma rede social e microblog, construída em Arquitetura Hexagonal em Java 17 utilizando Spring Boot 3 e os serviços de mensageria de CloudAMQP, API documentada pelo SpringDoc</p>
                         <div className="container-languages">
                             <span>Tecnologia utilizada</span>
                             <div className="language">
@@ -31,43 +49,6 @@ const Experience = () => {
                         <div className="buttons">
                             <a href="https://posts-i9sv.onrender.com/swagger-ui.html" target="_blank"><button>Site</button></a>
                             <a href="https://github.com/lucas-adm/springboot-posts" target="_blank"><button>Repositório</button></a>
-                        </div>
-                    </div>
-
-                    <div className="project">
-                        <h3>Costs</h3>
-                        <a href="https://project-costs-91vr.onrender.com/" target="_blank"><img src="imgs/projects/Costs.png" alt="Imagem do Projeto Costs" /></a>
-                        <p>Implementação de um sistema CRUD com React e json-server para organização de serviços iniciados pela empresa fictícia Costs</p>
-                        <div className="container-languages">
-                            <span>Tecnologia utilizada</span>
-                            <div className="language">
-                                <Icons src="JavaScript" name="JavaScript" w="50" h="50" />
-                                <Icons src="React" name="React" w="50" h="50" />
-                            </div>
-                        </div>
-                        <div className="buttons">
-                            <a href="https://project-costs-91vr.onrender.com/" target="_blank"><button>Site</button></a>
-                            <a href="https://github.com/lucas-adm/react-costs" target="_blank"><button>Repositório</button></a>
-                        </div>
-                    </div>
-
-                    <div className="project">
-                        <h3>Hotel Alura</h3>
-                        <a href="https://one-challenge-hotel.onrender.com" target="_blank"><img src="imgs/projects/Hotel.png" alt="Imagem do Hotel Alura" /></a>
-                        <p>Aplicação Full Stack para o cadastro de reservas e hóspedes em um hotel utilizando Spring Boot 3</p>
-                        <div className="container-languages">
-                            <span>Tecnologia utilizada</span>
-                            <div className="language">
-                                <Icons src="PostgreSQL" name="PostgreSQL" w="50" h="50" />
-                                <Icons src="Java" name="Java" w="50" h="50" />
-                                <Icons src="Spring" name="Spring" w="50" h="50" />
-                                <Icons src="JavaScript" name="JavaScript" w="50" h="50" />
-                                <Icons src="Docker" name="Docker" w="50" h="50" />
-                            </div>
-                        </div>
-                        <div className="buttons">
-                            <a href="https://one-challenge-hotel.onrender.com" target="_blank"><button>Site</button></a>
-                            <a href="https://github.com/lucas-adm/one-challenge-springboot-hotel" target="_blank"><button>Repositório</button></a>
                         </div>
                     </div>
 
@@ -121,6 +102,26 @@ const Experience = () => {
                         <div className="buttons">
                             <a href="https://dio-angular-quiz.onrender.com/" target="_blank"><button>Site</button></a>
                             <a href="https://github.com/lucas-adm/dio-challenge-angular-quiz" target="_blank"><button>Repositório</button></a>
+                        </div>
+                    </div>
+
+                    <div className="project">
+                        <h3>Hotel Alura</h3>
+                        <a href="https://one-challenge-hotel.onrender.com" target="_blank"><img src="imgs/projects/Hotel.png" alt="Imagem do Hotel Alura" /></a>
+                        <p>Aplicação Full Stack para o cadastro de reservas e hóspedes em um hotel utilizando Spring Boot 3</p>
+                        <div className="container-languages">
+                            <span>Tecnologia utilizada</span>
+                            <div className="language">
+                                <Icons src="PostgreSQL" name="PostgreSQL" w="50" h="50" />
+                                <Icons src="Java" name="Java" w="50" h="50" />
+                                <Icons src="Spring" name="Spring" w="50" h="50" />
+                                <Icons src="JavaScript" name="JavaScript" w="50" h="50" />
+                                <Icons src="Docker" name="Docker" w="50" h="50" />
+                            </div>
+                        </div>
+                        <div className="buttons">
+                            <a href="https://one-challenge-hotel.onrender.com" target="_blank"><button>Site</button></a>
+                            <a href="https://github.com/lucas-adm/one-challenge-springboot-hotel" target="_blank"><button>Repositório</button></a>
                         </div>
                     </div>
 

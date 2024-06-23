@@ -58,6 +58,7 @@ const HomeCarousel = () => {
                             <Icons src="Sass" name="Sass" w="88.8" h="88.8" strong="y" />
                             <Icons src="JavaScript" name="JavaScript" w="88.8" h="88.8" strong="y" />
                             <Icons src="React" name="React" w="88.8" h="88.8" strong="y" />
+                            <Icons src="Redux" name="Redux" w="88.8" h="88.8" strong="y" />
                             <Icons src="TypeScript" name="TypeScript" w="88.8" h="88.8" strong="n" />
                             <Icons src="Angular" name="Angular" w="88.8" h="88.8" strong="n" />
                         </div>
@@ -65,6 +66,7 @@ const HomeCarousel = () => {
                             <Icons src="Sass" name="Sass" w="88.8" h="88.8" strong="y" />
                             <Icons src="JavaScript" name="JavaScript" w="88.8" h="88.8" strong="y" />
                             <Icons src="React" name="React" w="88.8" h="88.8" strong="y" />
+                            <Icons src="Redux" name="Redux" w="88.8" h="88.8" strong="y" />
                             <Icons src="TypeScript" name="TypeScript" w="88.8" h="88.8" strong="n" />
                             <Icons src="Angular" name="Angular" w="88.8" h="88.8" strong="n" />
                         </div>
@@ -72,6 +74,7 @@ const HomeCarousel = () => {
                             <Icons src="Sass" name="Sass" w="88.8" h="88.8" strong="y" />
                             <Icons src="JavaScript" name="JavaScript" w="88.8" h="88.8" strong="y" />
                             <Icons src="React" name="React" w="88.8" h="88.8" strong="y" />
+                            <Icons src="Redux" name="Redux" w="88.8" h="88.8" strong="y" />
                             <Icons src="TypeScript" name="TypeScript" w="88.8" h="88.8" strong="n" />
                             <Icons src="Angular" name="Angular" w="88.8" h="88.8" strong="n" />
                         </div>
@@ -79,6 +82,7 @@ const HomeCarousel = () => {
                             <Icons src="Sass" name="Sass" w="88.8" h="88.8" strong="y" />
                             <Icons src="JavaScript" name="JavaScript" w="88.8" h="88.8" strong="y" />
                             <Icons src="React" name="React" w="88.8" h="88.8" strong="y" />
+                            <Icons src="Redux" name="Redux" w="88.8" h="88.8" strong="y" />
                             <Icons src="TypeScript" name="TypeScript" w="88.8" h="88.8" strong="n" />
                             <Icons src="Angular" name="Angular" w="88.8" h="88.8" strong="n" />
                         </div>

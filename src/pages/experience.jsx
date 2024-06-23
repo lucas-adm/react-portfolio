@@ -21,6 +21,7 @@ const Experience = () => {
                             <div className="language">
                                 <Icons src="TypeScript" name="TypeScript" w="50" h="50" />
                                 <Icons src="React" name="React" w="50" h="50" />
+                                <Icons src="Redux" name="Redux" w="50" h="50" />
                                 <Icons src="Sass" name="Sass" w="50" h="50" />
                             </div>
                         </div>

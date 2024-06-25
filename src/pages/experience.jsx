@@ -33,7 +33,7 @@ const Experience = () => {
 
                     <div className="project">
                         <h3>Posts (Back-End)</h3>
-                        <a href="https://posts-i9sv.onrender.com/swagger-ui.html" target="_blank"><img src="imgs/projects/Posts-backend.png" alt="Imagem da interface Swagger para a Restful API de Posts" /></a>
+                        <a href="https://api-srs-posts.onrender.com" target="_blank"><img src="imgs/projects/Posts-backend.png" alt="Imagem da interface Swagger para a Restful API de Posts" /></a>
                         <p>RESTful API para uma rede social e microblog, construída em Arquitetura Hexagonal em Java 17 utilizando Spring Boot 3 e os serviços de mensageria de CloudAMQP, API documentada pelo SpringDoc</p>
                         <div className="container-languages">
                             <span>Tecnologia utilizada</span>

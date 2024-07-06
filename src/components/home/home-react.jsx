@@ -11,7 +11,7 @@ const HomeReact = () => {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Components.", "Hooks.", "SPA."],
+            strings: ["Components.", "Hooks.", "SPA.", "APIRest"],
             startDelay: 55,
             typeSpeed: 55,
             backSpeed: 55,
@@ -32,13 +32,14 @@ const HomeReact = () => {
                 <div className="container-language">
                     <div>
                         <span>feito em</span>
-                        <h2>React.</h2>
+                        <h2>Java Spring Boot</h2>
+                        <h2>& React.js</h2>
                     </div>
                     <div>
                         <h4>com <i ref={el} className="typed"></i></h4>
                     </div>
                     <div>
-                        <h4 className="reference">inspired by <a href="https://marcosramoss.dev" target="_blank">@Marcos Ramos</a> .</h4>
+                        <h4 className="reference">go to<a href="https://github.com/lucas-adm/react-portfolio" target="_blank">repo</a></h4>
                     </div>
                 </div>
                 <div className="container-tools">

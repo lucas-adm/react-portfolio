@@ -1,0 +1,83 @@
+@use '../../../variables'
+@use '../../../mixins'
+
+.review
+    @include mixins.flex-column
+    padding: 2rem
+
+    @media screen and ( max-width: 365px )
+        padding: 2rem 1rem
+
+    >.top
+        @include mixins.flex-center
+        justify-content: start
+
+        >.photo
+            max-width: 6.66rem
+
+            >img
+                width: 100%
+                border-radius: 50%
+
+        >.user
+            @include mixins.flex-column
+            gap: 0
+            width: 100%
+
+            >.infos
+                @include mixins.flex-center
+                justify-content: start
+                gap: .5rem
+
+                @media screen and ( max-width: 365px )
+                    @include mixins.flex-column
+                    align-items: flex-start
+
+                >p.stars
+                    @include mixins.gradient-text
+
+            >a
+                cursor: default
+                width: fit-content
+                color: variables.$h-color
+                padding: 0 .25rem
+
+                &.default
+                    cursor: pointer
+                    text-decoration: underline
+
+                &.linkedin
+                    @include mixins.special-hover(variables.$h-color, variables.$white, variables.$gradient-linkedin, 0 0 .33rem rgba(72, 145, 255, 0.63))
+
+                &.github
+                    @include mixins.special-hover(variables.$h-color, variables.$white, variables.$gradient-github, 0 0 .33rem rgba(34, 34, 34, 0.63))
+
+                &.instagram
+                    @include mixins.special-hover(variables.$h-color, variables.$white, variables.$gradient-instagram, 0 0 .33rem rgba(255, 0, 140, 0.63))
+
+                &.x
+                    @include mixins.special-hover(variables.$h-color, variables.$white, variables.$gradient-x, 0 0 .33rem rgba(34, 34, 34, 0.63))
+
+                &.youtube
+                    @include mixins.special-hover(variables.$h-color, variables.$white, variables.$gradient-youtube, 0 0 .33rem rgba(255, 0, 0, 0.63))
+
+                &.facebook
+                    @include mixins.special-hover(variables.$h-color, variables.$white, variables.$gradient-facebook, 0 0 .33rem rgba(0, 102, 255, 0.63))
+
+                &.discord
+                    @include mixins.special-hover(variables.$h-color, variables.$white, variables.$gradient-discord, 0 0 .33rem rgba(153, 0, 255, 0.63))
+
+                &.whatsapp
+                    @include mixins.special-hover(variables.$h-color, variables.$white, variables.$gradient-whatsapp, 0 0 .33rem rgba(21, 255, 0, 0.63))
+
+                &.telegram
+                    @include mixins.special-hover(variables.$h-color, variables.$white, variables.$gradient-facebook, 0 0 .33rem rgba(0, 162, 255, 0.63))
+
+                >h4
+                    word-break: break-word
+                    color: inherit !important
+
+    >.body
+        >.content
+            >p
+                word-break: break-word

@@ -17,12 +17,15 @@ const Navbar = () => {
     }
 
     useEffect(() => {
+
+        setIsMenuOpen(false);
+
         window.addEventListener('scroll', handleScroll)
 
         return () => {
             window.removeEventListener('scroll', handleScroll)
         }
-    }, [])
+    }, [location])
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -32,7 +35,7 @@ const Navbar = () => {
 
     return (
         <header className={`${isScrolling ? 'scrolling' : ''} ${location.pathname.startsWith('/sobre') ? 'scrolling' : ''}`}>
-            <nav>
+            <nav className={`${isMenuOpen ? "open" : ""}`}>
                 <div className={`name ${isMenuOpen ? 'open' : ''}`}>
                     <Link to="/">
                         <h1 className="alvinegro">Lucas</h1>
@@ -41,12 +44,12 @@ const Navbar = () => {
                 </div>
                 <div className='icons' onClick={toggleMenu}>
                     <FaBars className={`bars ${isMenuOpen ? 'open' : ''}`} />
-                    <IoMdClose className={`close ${isMenuOpen ? 'open' : ''}`} />
                 </div>
                 <ul className={isMenuOpen ? 'open' : ''}>
                     <Link to="/sobre"><li>Sobre</li></Link>
                     <Link to="/experiencia"><li>Experiência</li></Link>
                     <Link to="/certificados"><li>Certificados</li></Link>
+                    <Link to="/reviews"><li>Reviews</li></Link>
                 </ul>
             </nav>
         </header >

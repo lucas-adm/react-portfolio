@@ -68,21 +68,34 @@ header
                 :hover:after
                     width: 100%
 
-    @media screen and (max-width:610px)
+    @media screen and (max-width:777px)
 
         padding: .5rem
         box-shadow: variables.$bottom-shadow
 
         nav
-            position: relative
-            display: block
+            justify-content: start
+            @include mixins.flex-column
+            align-items: flex-start
+            gap: 0
 
             .name
                 .alvinegro
                     display: none
 
-            .name.open
-                display: none
+            >ul
+                visibility: hidden
+                height: 0
+
+                &.open
+                    width: fit-content
+                    @include mixins.flex-column
+                    gap: 3rem
+                    align-items: flex-start
+                    padding: 2rem 0
+                    visibility: visible
+                    height: auto
+                    transition: ease-in-out .3s
 
             .icons
 
@@ -95,27 +108,7 @@ header
                 .bars
                     display: block
 
-                .bars.open
-                    display: none
-
-                .close.open
-                    display: block
-                    top: -5px
-                    right: -25px
-
-            ul
-                display: none
-
-            ul.open
-                @include mixins.flex-center
-                gap: 2rem
-                padding: 2rem
-                margin-left: -6.66rem
-
-                li:after
-                    width: 100%
-
 header.scrolling
-    padding: 0.5rem
+    padding: .5rem
     background-color: variables.$light
     box-shadow: variables.$bottom-shadow

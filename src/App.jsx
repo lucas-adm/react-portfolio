@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation, Navigate, HashRouter } from 'react-router-dom'
+import { BrowserRouter as Router, HashRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import ScrollToTop from './scrollToTop'
 
 import Navbar from './components/navbar'
@@ -9,6 +9,7 @@ import Experience from './pages/experience'
 import Certificates from './pages/certificates'
 import Certificate from './pages/certificate'
 import About from './pages/about'
+import Reviews from './pages/reviews'
 
 import Footer from './components/footer'
 
@@ -31,6 +32,7 @@ function HeaderControl() {
         <Route exact path="/certificados" element={<Certificates />} />
         <Route exact path="/certificados/:course/:certified/:hasBack" element={<Certificate />} />
         <Route exact path="/sobre" element={<About />} />
+        <Route exact path="/reviews" element={<Reviews />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />

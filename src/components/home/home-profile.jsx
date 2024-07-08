@@ -45,7 +45,7 @@ const HomeProfile = () => {
             <div className="container-apresentation">
                 <div className="container-grid">
                     <div className="apresentation-text">
-                        <h1>Desenvolvedor Back-end & <br /> <i ref={el}></i></h1>
+                        <h1>Desenvolvedor <br /> Full Stack <br /> <i ref={el}></i></h1>
                         <p><strong>sout</strong>("Olá mundo 👋🏻!"). Sempre em busca de conhecimento trilho o caminho do <strong>Full Stack</strong>, espero um dia fazer parte de um projeto revolucionário. </p>
                         <div className="svgs">
                             <a href="https://github.com/lucas-adm" target="_blank"><FaGithub id="github" /></a>

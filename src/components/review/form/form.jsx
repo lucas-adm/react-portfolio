@@ -244,12 +244,12 @@ const Form = ({ toReview, showReviews, randomKey }) => {
                         </div>
                         <div className="input">
                             <label htmlFor="socialMedia">Rede social</label>
-                            <input id="socialMedia" name="socialMedia" type="text" placeholder="GitHub, LinkedIn, X, Instagram, Youtube..." value={data.socialMedia} onChange={handleInputChange} required />
+                            <input id="socialMedia" name="socialMedia" type="text" placeholder="GitHub, LinkedIn, X, Instagram, Youtube, Discord, Facebook, Whatsapp" value={data.socialMedia} onChange={handleInputChange} />
                             <span className="error">{error.socialMedia}</span>
                         </div>
                         <div className="input">
                             <label htmlFor="content">Mensagem*</label>
-                            <textarea id="content" name="content" maxLength={777} placeholder="Comente sobre mim ou sobre este portfolio" value={data.content} onChange={handleInputChange} required />
+                            <textarea id="content" name="content" maxLength={777} placeholder="Opine, recomende, divulgue ou apenas se apresente" value={data.content} onChange={handleInputChange} required />
                             {!error.content && <span className="count">{dataContentLength}/777</span>}
                             <span className="error">{error.content}</span>
                         </div>

@@ -49,7 +49,7 @@ const Navbar = () => {
                     <Link to="/sobre"><li>Sobre</li></Link>
                     <Link to="/experiencia"><li>Experiência</li></Link>
                     <Link to="/certificados"><li>Certificados</li></Link>
-                    <Link to="/reviews"><li>Reviews</li></Link>
+                    {/* <Link to="/reviews"><li>Reviews</li></Link> */}
                 </ul>
             </nav>
         </header >
